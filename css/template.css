@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    font-family: VAGRounded-Light, Arial, sans-serif;
+    font-size: 14px;
+    line-height:1.5;
+}
+
+/** General **/
+
+.container{
+    margin:0 auto;
+    width: 1024px;
+    height: 768px;
+    background-color: #e2e6e8;
+    position: relative;
+}
+
+h3{
+    font-family: Rockwell, Serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+}
+
+span.bold{
+    font-weight: bold;
+}
+
+/** Shopping list **/
+
+.shopping-list{
+    width: 310px;
+    height: 768px;
+    float: left;
+    background: #dfdfd0;
+    position: relative;
+}
+
+.shopping-list .row1{
+    width: 35px;
+    float: left;
+}
+
+.shopping-list .row1 p{
+    text-align: center;
+}
+
+.shopping-list .row2{
+    width: 200px;
+    float: left;
+}
+
+.shopping-list .row3{
+    width: 75px;
+    float: left;
+}
+
+.shopping-list .row3 p{
+    float: right;
+    text-align: right;
+}
+
+.shopping-list .shopping-list-header p{
+    font-family: Rockwell, Serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.shopping-list .bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: #000;
+}
+
+/** Top bar **/
+
+.top-bar{
+    float: left;
+    background: #000;
+    width: 714px;
+    height: 30px;
+}
+
+/** Main **/
+
+.main{
+    float: left;
+    width: 714px;
+    height: 658px;
+    position: relative;
+}
+
+.main .product{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.main .scanned-products{
+    float: left;
+}
+
+.main .scanned-products .product2{
+    display: none;
+}
+
+.main .scanned-products .card-big{
+    width: 373px;
+    height: 578px;
+    float: left;
+    margin: 40px 40px;
+    background: #dfdfd0;
+    border-bottom: 2px solid #77b700;
+}
+
+.main .scanned-products .card-big .card-big-header{
+    background: #000;
+    color: #77b700;
+    border-radius: 10px 10px 0 0;
+}
+
+.main .scanned-products .card-big .card-big-inner{
+    margin: 20px;
+}
+
+.main .scanned-products .card-big .card-big-inner .card-big-image{
+    width: 100%;
+    height: 280px;
+}
+
+.main .scanned-products .card-big .card-big-inner .card-big-image img{
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+
+.main .scanned-products .card-big .card-big-inner .price{
+    font-size: 34px;
+}
+
+.main .scanned-products .card-big .card-big-inner .warning{
+    width: 100%;
+    float: left;
+    margin: 20px 0 0 0;
+}
+
+.main .scanned-products .card-big .card-big-inner .warning .warning-sign{
+    width: 30px;
+    float: left;
+}
+
+.main .scanned-products .card-big .card-big-inner .warning .warning-text{
+    float: left;
+    margin: 0 0 0 10px;
+    width: 293px;
+}
+
+/** Buttons **/
+
+.buttons{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 714px;
+    height: 80px;
+    background: #333333;
+}
+
+.buttons ul{
+    margin: 20px 0 20px 0;
+}
+
+.buttons ul li{
+    float: left;
+    margin: 0 56px;
+    padding: 5px 10px;
+    border: 1px solid #77b700;
+    border-radius: 5px;
+}
+
+.buttons ul li a {
+    font-family: Rockwell, Serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #e2e6e8;
+}
+
+.buttons ul li a:before{
+    float: left;
+    margin-right: 10px;
+    padding: 0 10px 0 0;
+    content: "";
+    border-right: 1px dotted #77b700;
+    margin-top: 2px;
+    width: 25px;
+    height: 20px;
+    background: url("../images/folder.svg") no-repeat;
+}
+
+.buttons ul li:first-child a:before{
+    padding: 0 8px 0 0;
+    width: 18px;
+    height: 20px;
+    background: url("../images/home.svg") no-repeat;
+}
+
+.buttons ul li:last-child a:before{
+    padding: 0 5px 0 0;
+    background: url("../images/zoeken.svg") no-repeat;
+}
