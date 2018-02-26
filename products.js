@@ -18,7 +18,7 @@ channel.bind('my-event', function(data) {
           $(".product3").hide();
           $(".product4").hide();
             break;
-        case 8711200197002:
+        case 2222222222222:
           $(".product1").hide();
           $(".product2").show();
           $(".product3").hide();

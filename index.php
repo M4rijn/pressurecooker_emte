@@ -100,6 +100,37 @@
             </div>
 
             <!-- PRODUCT 2 -->
+            <div class="product product2">
+                <div class="card-big">
+                    <div class="card-big-header">
+                        <h3>Sourcy 500ml</h3>
+                    </div>
+
+                    <div class="card-big-inner">
+                        <figure class="card-big-image">
+                            <img src="images/sourcy.png"/>
+                        </figure>
+                        <div class="price">
+                            <p>&euro;1,49</p>
+                        </div>
+                        <div class="info">
+                            <p><span class="bold">Ten minste houdbaar tot: </span>04-2022</p>
+                        </div>
+                        <div class="warning">
+                            <figure class="warning-sign">
+                                <img src="images/warning.svg">
+                            </figure>
+<!--                            <div class="warning-text">-->
+<!--                                <p><span class="bold">Pas op!</span></p>-->
+<!--                                <p>Dit product bevat ingrediënten die op uw lijst van te vermijden stoffen staat.</p>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PRODUCT 3 -->
             <div class="product product3">
                 <div class="card-big">
                     <div class="card-big-header">
