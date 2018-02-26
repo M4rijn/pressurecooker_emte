@@ -7,7 +7,9 @@ body{
     line-height:1.5;
 }
 
-/** General **/
+/****************************************************************************
+----------------------------------------------------------------------------- General
+**/
 
 .container{
     margin:0 auto;
@@ -24,24 +26,44 @@ body{
 
 @font-face {
     font-family: "Rockwell Regular";
+    font-weight: normal;
     src: url("../fonts/ROCK.TTF");
 }
 
-h3{
+h3{ /* big card */
     font-family: "Rockwell Regular", Serif;
     font-size: 24px;
-    font-weight: normal;
     text-transform: uppercase;
+    font-weight: normal;
+    color: #77b700;
     width: 100%;
     text-align: center;
-    padding: 7px 0;
+}
+
+h4{ /* total amount */
+    font-family: "Rockwell Regular", Serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #e2e6e8;
+}
+
+h5{ /* side cards */
+    font-family: "Rockwell Regular", Serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    width: 100%;
+    color: #77b700;
 }
 
 span.bold{
     font-weight: bold;
 }
 
-/** Shopping list **/
+/****************************************************************************
+----------------------------------------------------------------------------- Shopping list
+**/
 
 .shopping-list{
     width: 310px;
@@ -55,6 +77,7 @@ span.bold{
     width: 35px;
     float: left;
     text-align: center;
+    display: block;
 }
 
 .shopping-list .collumn2{
@@ -67,6 +90,7 @@ span.bold{
     margin: 0 7px 0 0;
     float: left;
     text-align: right;
+    display: block;
 }
 
 .shopping-list .shopping-list-header{
@@ -112,12 +136,12 @@ span.bold{
 
 .shopping-list .shopping-list-items .row.active .shopping-list-active-buttons figure{
     width: 25px;
-    margin: 6px 7px 0 12px;
+    margin: 6px 0 0 35px;
     float: left;
 }
 
-.shopping-list .shopping-list-items .row.active .shopping-list-active-buttons .plus{
-    margin: 6px 0 0 24px;
+.shopping-list .shopping-list-items .row.active .shopping-list-active-buttons .minus{
+    margin: 6px 0 0 10px;
 }
 
 .shopping-list .shopping-list-items p.gray{
@@ -138,7 +162,26 @@ span.bold{
     background: #000;
 }
 
-/** Top bar **/
+.shopping-list .bottom h4{
+    margin: 25px 0 0 0;
+}
+
+.shopping-list .bottom .left{
+    width: 210px;
+    margin: 0 0 0 15px;
+    float: left;
+}
+
+.shopping-list .bottom .right{
+    width: 75px;
+    margin: 0 10px 0 0;
+    float: left;
+    text-align: right;
+}
+
+/****************************************************************************
+-----------------------------------------------------------------------------Top bar
+**/
 
 .top-bar{
     float: left;
@@ -147,7 +190,31 @@ span.bold{
     height: 30px;
 }
 
-/** Main **/
+.top-bar p{
+    float: right;
+    font-family: "Rockwell Regular";
+    color: #e2e6e8;
+    margin: 0 15px 0 0;
+}
+
+.top-bar p span.a{
+    font-size: 14px;
+}
+
+.top-bar p span.b{
+    font-size: 18px;
+    border-bottom: 2px solid #e2e6e8;
+    margin: 0 5px;
+    padding: 0 2px;
+}
+
+.top-bar p span.c{
+    font-size: 22px;
+}
+
+/****************************************************************************
+----------------------------------------------------------------------------- Main
+**/
 
 .main{
     float: left;
@@ -164,66 +231,24 @@ span.bold{
     right: 0;
 }
 
+/* Scanned products */
+
 .main .scanned-products{
     float: left;
 }
 
-.main .scanned-products .product2{
-    display: none;
-}
-
-.main .scanned-products .card-big{
-    width: 373px;
-    height: 578px;
-    float: left;
-    margin: 40px 40px;
-    background: #dfdfd0;
-    border-bottom: 2px solid #77b700;
-}
-
-.main .scanned-products .card-big .card-big-header{
-    background: #000;
-    color: #77b700;
-    border-radius: 10px 10px 0 0;
-}
-
-.main .scanned-products .card-big .card-big-inner{
-    margin: 20px;
-}
-
-.main .scanned-products .card-big .card-big-inner .card-big-image{
+.main .scanned-products .side-cards-header{
     width: 100%;
-    height: 280px;
+    height: 40px;
 }
 
-.main .scanned-products .card-big .card-big-inner .card-big-image img{
-    margin: 0 auto;
-    display: block;
-    height: 100%;
+.main .scanned-products .side-cards-header h5{
+    padding: 6px 0 0 0;
 }
 
-.main .scanned-products .card-big .card-big-inner .price{
-    font-size: 34px;
-}
-
-.main .scanned-products .card-big .card-big-inner .warning{
-    width: 100%;
-    float: left;
-    margin: 20px 0 0 0;
-}
-
-.main .scanned-products .card-big .card-big-inner .warning .warning-sign{
-    width: 30px;
-    float: left;
-}
-
-.main .scanned-products .card-big .card-big-inner .warning .warning-text{
-    float: left;
-    margin: 0 0 0 10px;
-    width: 293px;
-}
-
-/** Buttons **/
+/****************************************************************************
+----------------------------------------------------------------------------- NAVIGATION Buttons
+**/
 
 .buttons{
     position: absolute;
@@ -275,4 +300,92 @@ span.bold{
 .buttons ul li:last-child a:before{
     padding: 0 5px 0 0;
     background: url("../images/zoeken.svg") no-repeat;
+}
+
+/****************************************************************************
+----------------------------------------------------------------------------- CARDS
+**/
+
+.card{
+    float: left;
+    background: #dfdfd0;
+}
+
+.card .card-header{
+    background: #000;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.card .card-header h3{
+    padding: 7px 0;
+}
+
+.card .card-header h5{
+    padding: 5px 0;
+}
+
+.card .card-bottom{
+    height: 35px;
+    background: #77b700;
+}
+
+.card .card-bottom p{
+    color: #fff;
+    font-size: 19px;
+    margin: 0 auto;
+    padding: 3px 0 0 0;
+
+}
+
+.card .card-bottom p.add:before{
+    content: "";
+    background: url("../images/add-to-list.svg") no-repeat;
+    float: left;
+    margin: 2px 0 0 -20px;
+    width: 33px;
+    height: 22px;
+}
+
+.card.card-big{
+    width: 373px;
+    height: 578px;
+    margin: 40px 40px;
+    border-bottom: 2px solid #77b700;
+}
+
+.card.card-big .card-big-inner{
+    margin: 20px;
+}
+
+.card.card-big .card-big-inner .card-big-image{
+    width: 100%;
+    height: 280px;
+}
+
+.card .card-image img{
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+
+.card.card-big .card-big-inner .price{
+    font-size: 34px;
+}
+
+.card.card-big .card-big-inner .warning{
+    width: 100%;
+    float: left;
+    margin: 20px 0 0 0;
+}
+
+.card.card-big .card-big-inner .warning .warning-sign{
+    width: 30px;
+    float: left;
+}
+
+.card.card-big .card-big-inner .warning .warning-text{
+    float: left;
+    margin: 0 0 0 10px;
+    width: 293px;
 }

@@ -75,12 +75,17 @@
             ?>
         </div>
         <div class="bottom">
-
+            <div class="left">
+                <h4>Totaalbedrag:</h4>
+            </div>
+            <div class="right">
+                <h4>&euro;127,63</h4>
+            </div>
         </div>
     </div>
 
     <div class="top-bar">
-
+        <p><span class="a">A</span> <span class="b">A</span> <span class="c">A</span></p>
     </div>
 
     <div class="main">
@@ -88,13 +93,13 @@
 
             <!-- PRODUCT 1 -->
             <div class="product product1">
-                <div class="card-big">
-                    <div class="card-big-header">
+                <div class="card card-big">
+                    <div class="card-header">
                         <h3>Coca cola 4-pack</h3>
                     </div>
 
                     <div class="card-big-inner">
-                        <figure class="card-big-image">
+                        <figure class="card-image">
                             <img src="images/coca-cola.png"/>
                         </figure>
                         <div class="price">
@@ -115,25 +120,49 @@
                     </div>
 
                 </div>
+
+                <div class="side-cards">
+
+                    <div class="side-cards-header">
+                        <h5>Ook lekker:</h5>
+                    </div>
+
+                    <div class="card side-card side-card-1">
+                        <div class="card-header">
+                            <h5>Coca cola 4-pack</h5>
+                        </div>
+
+                        <div class="card-side-inner">
+                            <figure class="card-side-image">
+                                <img src="images/coca-cola.png"/>
+                            </figure>
+                        </div>
+
+                        <div class="card-bottom">
+                            <p class="add">Toevoegen</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- PRODUCT 2 -->
-            <div class="product product2">
-                <div class="card-big">
-                    <div class="card-big-header">
-                        <h3>Sourcy 500ml</h3>
-                    </div>
-
-                    <div class="card-big-inner">
-                        <figure class="card-big-image">
-                            <img src="images/sourcy.png"/>
-                        </figure>
-                        <div class="price">
-                            <p>&euro;1,49</p>
-                        </div>
-                        <div class="info">
-                            <p><span class="bold">Ten minste houdbaar tot: </span>04-2022</p>
-                        </div>
+<!--            <div class="product product2">-->
+<!--                <div class="card-big">-->
+<!--                    <div class="card-big-header">-->
+<!--                        <h3>Sourcy 500ml</h3>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="card-big-inner">-->
+<!--                        <figure class="card-big-image">-->
+<!--                            <img src="images/sourcy.png"/>-->
+<!--                        </figure>-->
+<!--                        <div class="price">-->
+<!--                            <p>&euro;1,49</p>-->
+<!--                        </div>-->
+<!--                        <div class="info">-->
+<!--                            <p><span class="bold">Ten minste houdbaar tot: </span>04-2022</p>-->
+<!--                        </div>-->
 <!--                        <div class="warning">-->
 <!--                            <figure class="warning-sign">-->
 <!--                                <img src="images/warning.svg">-->
@@ -143,41 +172,41 @@
 <!--                                <p>Dit product bevat ingrediënten die op uw lijst van te vermijden stoffen staat.</p>-->
 <!--                            </div>-->
 <!--                        </div>-->
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- PRODUCT 3 -->
-            <div class="product product3">
-                <div class="card-big">
-                    <div class="card-big-header">
-                        <h3>Lipton Ice Tea Peach 500ml</h3>
-                    </div>
-
-                    <div class="card-big-inner">
-                        <figure class="card-big-image">
-                            <img src="images/icetea.png"/>
-                        </figure>
-                        <div class="price">
-                            <p>&euro;1,89</p>
-                        </div>
-                        <div class="info">
-                            <p><span class="bold">Ten minste houdbaar tot: </span>12-2018</p>
-                        </div>
-                        <div class="warning">
-                            <figure class="warning-sign">
-                                <img src="images/warning.svg">
-                            </figure>
-                            <div class="warning-text">
-                                <p><span class="bold">Pas op!</span></p>
-                                <p>Dit product bevat ingrediënten die op uw lijst van te vermijden stoffen staat.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+<!--                    </div>-->
+<!---->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--            <!-- PRODUCT 3 -->
+<!--            <div class="product product3">-->
+<!--                <div class="card-big">-->
+<!--                    <div class="card-big-header">-->
+<!--                        <h3>Lipton Ice Tea Peach 500ml</h3>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="card-big-inner">-->
+<!--                        <figure class="card-big-image">-->
+<!--                            <img src="images/icetea.png"/>-->
+<!--                        </figure>-->
+<!--                        <div class="price">-->
+<!--                            <p>&euro;1,89</p>-->
+<!--                        </div>-->
+<!--                        <div class="info">-->
+<!--                            <p><span class="bold">Ten minste houdbaar tot: </span>12-2018</p>-->
+<!--                        </div>-->
+<!--                        <div class="warning">-->
+<!--                            <figure class="warning-sign">-->
+<!--                                <img src="images/warning.svg">-->
+<!--                            </figure>-->
+<!--                            <div class="warning-text">-->
+<!--                                <p><span class="bold">Pas op!</span></p>-->
+<!--                                <p>Dit product bevat ingrediënten die op uw lijst van te vermijden stoffen staat.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                </div>-->
+<!--            </div>-->
 
         </div>
     </div>
