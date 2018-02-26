@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body{
-    font-family: VAGRounded-Light, Arial, sans-serif;
+    font-family: "VAGRounded Light", Arial, sans-serif;
     font-size: 14px;
     line-height:1.5;
 }
@@ -17,8 +17,18 @@ body{
     position: relative;
 }
 
+@font-face {
+    font-family: "VAGRounded Light";
+    src: url("../fonts/VAGRounded-Light.ttf");
+}
+
+@font-face {
+    font-family: "Rockwell Regular";
+    src: url("../fonts/ROCK.TTF");
+}
+
 h3{
-    font-family: Rockwell, Serif;
+    font-family: "Rockwell Regular", Serif;
     font-size: 24px;
     font-weight: normal;
     text-transform: uppercase;
@@ -41,34 +51,83 @@ span.bold{
     position: relative;
 }
 
-.shopping-list .row1{
+.shopping-list .collumn1{
     width: 35px;
     float: left;
-}
-
-.shopping-list .row1 p{
     text-align: center;
 }
 
-.shopping-list .row2{
+.shopping-list .collumn2{
     width: 200px;
     float: left;
 }
 
-.shopping-list .row3{
-    width: 75px;
+.shopping-list .collumn3{
+    width: 68px;
+    margin: 0 7px 0 0;
     float: left;
-}
-
-.shopping-list .row3 p{
-    float: right;
     text-align: right;
 }
 
+.shopping-list .shopping-list-header{
+    height: 50px;
+    width: 100%;
+}
+
 .shopping-list .shopping-list-header p{
-    font-family: Rockwell, Serif;
+    font-family: "Rockwell Regular", Serif;
     font-size: 18px;
     color: #000;
+    margin: 0 0 0 7px;
+}
+
+.shopping-list .shopping-list-header .row p{
+    margin: 0;
+    font-size: 16px;
+}
+
+.shopping-list .shopping-list-items{
+    width: 100%;
+    height: 637px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.shopping-list .shopping-list-items .row{
+    flex: auto;
+}
+
+.shopping-list .shopping-list-items .row.active{
+    background: #77b700;
+    height: 50px;
+    box-sizing: content-box;
+    color: #e2e6e8;
+}
+
+.shopping-list .shopping-list-items .row.active .shopping-list-active-buttons{
+    float: left;
+    width: 100%;
+}
+
+.shopping-list .shopping-list-items .row.active .shopping-list-active-buttons figure{
+    width: 25px;
+    margin: 6px 7px 0 12px;
+    float: left;
+}
+
+.shopping-list .shopping-list-items .row.active .shopping-list-active-buttons .plus{
+    margin: 6px 0 0 24px;
+}
+
+.shopping-list .shopping-list-items p.gray{
+    color: #727272;
+}
+
+.shopping-list .shopping-list-items img.check{
+    width: 40%;
+    margin: 0 auto;
+    display: block;
 }
 
 .shopping-list .bottom{
@@ -188,7 +247,7 @@ span.bold{
 }
 
 .buttons ul li a {
-    font-family: Rockwell, Serif;
+    font-family: "Rockwell Regular", Serif;
     font-size: 16px;
     text-transform: uppercase;
     color: #e2e6e8;

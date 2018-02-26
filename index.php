@@ -21,41 +21,59 @@
 
     <div class="shopping-list">
         <div class="shopping-list-header">
-            <div class="row1"><p>Rij</p></div>
-            <div class="row2"><p>Product</p></div>
-            <div class="row3"><p>Bedrag</p></div>
+            <p>Boodschappenlijst</p>
+            <div class="row">
+                <div class="collumn1"><p>Rij</p></div>
+                <div class="collumn2"><p>Product</p></div>
+                <div class="collumn3"><p>Bedrag</p></div>
+            </div>
         </div>
+        <div class="shopping-list-items">
+            <?php
+                $shoppingList = [
+                    ["2", "Maaltijdsalade Kip met pasta", "3,99", "unchecked", "unactive"],
+                    ["2", "Rozijnen 300gr", "1,20", "unchecked", "unactive"],
+                    ["2", "Groene druiven 400gr", "2,50", "unchecked", "unactive"],
+                    ["3", "Kaas jong blok 400gr", "6,20", "unchecked", "unactive"],
+                    ["4", "Volkoren brood", "1,10", "unchecked", "unactive"],
+                    ["5", "Tijgerbrood", "0,80", "unchecked", "unactive"],
+                    ["5", "Pindakaas 500gr", "4,10", "unchecked", "unactive"],
+                    ["6", "Maggi lasagnamix 4 pers.", "5,84", "unchecked", "unactive"],
+                    ["6", "Hak sperziebonen 500gr", "3,70", "unchecked", "unactive"],
+                    ["6", "Bonduelle erwten 500gr", "2,30", "unchecked", "unactive"],
+                    ["6", "Hak Spinazie 300gr", "1,56", "unchecked", "unactive"],
+                    ["7", "Duivis Borrelnootjes 600gr.", "2,40", "unchecked", "unactive"],
+                    ["7", "Lay’s Paprika", "1,79", "unchecked", "active"],
+                    ["8", "Coca cola 4 pack", "7,99", "unchecked", "unactive"],
+                    ["8", "Fanta light 1,5l", "2,49", "unchecked", "unactive"],
+                    ["1", "Appels", "4,20", "checked", "unactive"],
+                    ["1", "Mandarijnen", "2,69", "checked", "unactive"],
+                    ["1", "Bananen", "3,10", "checked", "unactive"],
+                    ["1", "Paprika", "1,40", "checked", "unactive"]
+                ];
 
-        <?php
-            $shoppingList = [
-                ["2", "Maaltijdsalade Kip met pasta", "3,99"],
-                ["2", "Rozijnen 300gr", "1,20"],
-                ["2", "Groene druiven 400gr", "2,50"],
-                ["3", "Kaas jong blok 400gr", "6,20"],
-                ["4", "Volkoren brood", "1,10"],
-                ["5", "Tijgerbrood", "0,80"],
-                ["5", "Pindakaas 500gr", "4,10"],
-                ["6", "Maggi lasagnamix 4 pers.", "5,84"],
-                ["6", "Hak sperziebonen 500gr", "3,70"],
-                ["6", "Bonduelle erwten 500gr", "2,30"],
-                ["6", "Hak Spinazie 300gr", "1,56"],
-                ["7", "Duivis Borrelnootjes 600gr.", "2,40"],
-                ["7", "Lay’s Paprika", "1,79"],
-                ["8", "Coca cola 4 pack", "7,99"],
-                ["8", "Fanta light 1,5l", "2,49"],
-                ["1", "Appels", "4,20"],
-                ["1", "Mandarijnen", "2,69"],
-                ["1", "Bananen", "3,10"],
-                ["1", "Paprika", "1,40"],
-            ];
-
-            foreach ($shoppingList as $item){ ?>
-                <div class="row1"><p><?php echo $item[0]; ?></p></div>
-                <div class="row2"><p><?php echo $item[1]; ?></p></div>
-                <div class="row3"><p><?php echo $item[2]; ?></p></div>
-            <?php }
-        ?>
-
+                foreach ($shoppingList as $item){ ?>
+                    <div class="row <?php if ($item[4] === "active"){echo "active"; } ?>">
+                        <div class="collumn1"><?php if($item[3] === "checked"){ echo "<img class='check' src='images/checked.svg'/>"; } else { echo "<p>".$item[0]."</p>"; } ?></div>
+                        <div class="collumn2"><p <?php if($item[3] === "checked"){ echo "class='gray'"; } ?>><?php echo $item[1]; ?></p></div>
+                        <div class="collumn3"><p <?php if($item[3] === "checked"){ echo "class='gray'"; } ?>><?php echo $item[2]; ?></p></div>
+                        <?php if ($item[4] === "active"){?>
+                            <div class="shopping-list-active-buttons">
+                                <figure class="delete">
+                                    <img src="images/delete.svg" />
+                                </figure>
+                                <figure class="plus">
+                                    <img src="images/plus.svg" />
+                                </figure>
+                                <figure class="minus">
+                                    <img src="images/minus.svg" />
+                                </figure>
+                            </div>
+                        <?php } ?>
+                    </div>
+                <?php }
+            ?>
+        </div>
         <div class="bottom">
 
         </div>
@@ -116,15 +134,15 @@
                         <div class="info">
                             <p><span class="bold">Ten minste houdbaar tot: </span>04-2022</p>
                         </div>
-                        <div class="warning">
-                            <figure class="warning-sign">
-                                <img src="images/warning.svg">
-                            </figure>
+<!--                        <div class="warning">-->
+<!--                            <figure class="warning-sign">-->
+<!--                                <img src="images/warning.svg">-->
+<!--                            </figure>-->
 <!--                            <div class="warning-text">-->
 <!--                                <p><span class="bold">Pas op!</span></p>-->
 <!--                                <p>Dit product bevat ingrediënten die op uw lijst van te vermijden stoffen staat.</p>-->
 <!--                            </div>-->
-                        </div>
+<!--                        </div>-->
                     </div>
 
                 </div>
