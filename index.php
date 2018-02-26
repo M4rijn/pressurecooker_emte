@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Title</title>
-
+    <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+    <script src="vendor/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="products.js"></script>
     <!-- CSS -->
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/template.css" rel="stylesheet" type="text/css" />
@@ -98,7 +100,7 @@
             </div>
 
             <!-- PRODUCT 2 -->
-            <div class="product product2">
+            <div class="product product3">
                 <div class="card-big">
                     <div class="card-big-header">
                         <h3>Lipton Ice Tea Peach 500ml</h3>
