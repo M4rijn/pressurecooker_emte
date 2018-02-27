@@ -1,0 +1,16 @@
+{
+    "stuntName": "StuntStemmen",
+    "active": true,
+    "voteProducts": [
+      {
+        "productName": "Product1",
+        "numberVotes": 50,
+        "image": "../images/product1.png"
+      },
+      {
+        "productName": "Product2",
+        "numberVotes": 12,
+        "image": "../images/product2.png"
+      }
+    ]
+  }
