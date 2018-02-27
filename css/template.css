@@ -12,6 +12,7 @@ body{
 **/
 
 .container{
+    overflow: hidden;
     margin:0 auto;
     width: 1024px;
     height: 768px;
@@ -111,15 +112,20 @@ span.bold{
 }
 
 .shopping-list .shopping-list-items{
+    float: left;
     width: 100%;
     height: 637px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
+    /*overflow-y: scroll;*/
 }
 
 .shopping-list .shopping-list-items .row{
-    flex: auto;
+    width: 100%;
+    float: left;
+    padding: 5px 0;
+}
+
+.shopping-list .shopping-list-items .row .shopping-list-active-buttons{
+    display: none;
 }
 
 .shopping-list .shopping-list-items .row.active{
@@ -127,9 +133,11 @@ span.bold{
     height: 50px;
     box-sizing: content-box;
     color: #e2e6e8;
+    padding: 0 0 10px 0;
 }
 
 .shopping-list .shopping-list-items .row.active .shopping-list-active-buttons{
+    display: block;
     float: left;
     width: 100%;
 }
@@ -144,13 +152,32 @@ span.bold{
     margin: 6px 0 0 10px;
 }
 
+.shopping-list .shopping-list-items .row.just-added{
+    animation: row-just-added 1s;
+}
+
+@keyframes row-just-added {
+    0% {
+        background-color: #77b700;
+        color: #fff;
+    }
+    50% {
+        background-color: #77b700;
+        color: #fff;
+    }
+    100% {
+        background-color: #e2e6e8;
+        color: #333333;
+    }
+}
+
 .shopping-list .shopping-list-items p.gray{
     color: #727272;
 }
 
 .shopping-list .shopping-list-items img.check{
     width: 40%;
-    margin: 0 auto;
+    margin: 4px auto 0 auto;
     display: block;
 }
 
@@ -229,6 +256,31 @@ span.bold{
     bottom: 0;
     left: 0;
     right: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.main .product.active{
+    opacity: 1;
+    z-index: 2;
+}
+
+.main .product.active .side-card-1{
+    animation: side-card-slide-in 0.5s ease-out;
+}
+
+.main .product.active .side-card-2{
+    transform: translateX(400px);
+    animation: side-card-slide-in 0.5s 0.25s ease-out forwards;
+}
+
+@keyframes side-card-slide-in {
+    0%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 /* Scanned products */
@@ -321,24 +373,52 @@ span.bold{
     padding: 7px 0;
 }
 
-.card .card-header h5{
-    padding: 5px 0;
+.card .card-header h5{ /* small */
+    padding: 3px 0;
+}
+
+.card .card-inner .card-image{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.card .card-inner .card-image img.image{
+    position: absolute;
+    max-width: 90%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.card .card-inner .card-image img.sticker{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
 }
 
 .card .card-bottom{
     height: 35px;
     background: #77b700;
+    display: flex;
+    align-content: center;
+    width: 100%;
 }
 
-.card .card-bottom p{
+.card .card-bottom a{
     color: #fff;
     font-size: 19px;
-    margin: 0 auto;
     padding: 3px 0 0 0;
-
+    display: block;
+    margin: 0 auto;
 }
 
-.card .card-bottom p.add:before{
+.card .card-bottom a.add:before{
     content: "";
     background: url("../images/add-to-list.svg") no-repeat;
     float: left;
@@ -347,6 +427,11 @@ span.bold{
     height: 22px;
 }
 
+.card.clicked .card-bottom{
+    background: #333333;
+}
+
+/* Big card */
 .card.card-big{
     width: 373px;
     height: 578px;
@@ -356,17 +441,12 @@ span.bold{
 
 .card.card-big .card-big-inner{
     margin: 20px;
-}
-
-.card.card-big .card-big-inner .card-big-image{
-    width: 100%;
+    width: calc(100% - 40px);
     height: 280px;
 }
 
-.card .card-image img{
-    margin: 0 auto;
-    display: block;
-    height: 100%;
+.card.card-big .card-big-inner .card-image.card-big-image{
+    padding-bottom: 280px;
 }
 
 .card.card-big .card-big-inner .price{
@@ -388,4 +468,28 @@ span.bold{
     float: left;
     margin: 0 0 0 10px;
     width: 293px;
+}
+
+/* Side card */
+.card.side-card{
+    width: 221px;
+    float: left;
+}
+
+.card.side-card.side-card-1{
+    margin: 0 0 20px 0;
+}
+
+.card.side-card .card-side-inner{
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: 195px;
+}
+
+.card.side-card .card-side-inner .card-image.card-side-image{
+    padding-bottom: 195px;
+}
+
+.card.side-card .additional-info{
+    display: none;
 }
