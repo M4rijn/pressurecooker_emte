@@ -29,48 +29,6 @@
             </div>
         </div>
         <div class="shopping-list-items">
-<!--            --><?php
-//                $shoppingList = [
-//                    ["2", "Maaltijdsalade Kip met pasta", "3,99"],
-//                    ["2", "Rozijnen 300gr", "1,20"],
-//                    ["2", "Groene druiven 400gr", "2,50"],
-//                    ["3", "Kaas jong blok 400gr", "6,20"],
-//                    ["4", "Volkoren brood", "1,10"],
-//                    ["5", "Tijgerbrood", "0,80"],
-//                    ["5", "Pindakaas 500gr", "4,10"],
-//                    ["6", "Maggi lasagnamix 4 pers.", "6,40"],
-//                    ["6", "Hak sperziebonen 500gr", "3,70"],
-//                    ["6", "Bonduelle erwten 500gr", "2,30"],
-//                    ["6", "Hak Spinazie 300gr", "1,56"],
-//                    ["7", "Duivis Borrelnootjes 600gr.", "2,40"],
-//                    ["7", "Lay’s Paprika", "1,79"],
-//                    ["8", "Coca cola 4 pack", "7,99"],
-//                    ["8", "Fanta light 1,5l", "2,49"],
-//                    ["1", "Appels", "4,20"],
-//                    ["1", "Mandarijnen", "2,69"],
-//                    ["1", "Bananen", "3,10"],
-//                    ["1", "Paprika", "1,40"]
-//                ];
-//
-//                foreach ($shoppingList as $item){ ?>
-<!--                    <div class="row">-->
-<!--                        <div class="collumn1"><p>--><?php //echo $item[0]; ?><!--</p></div>-->
-<!--                        <div class="collumn2"><p>--><?php //echo $item[1]; ?><!--</p></div>-->
-<!--                        <div class="collumn3"><p>--><?php //echo $item[2]; ?><!--</p></div>-->
-<!--                        <div class="shopping-list-active-buttons">-->
-<!--                            <figure class="delete">-->
-<!--                                <img src="images/delete.svg" />-->
-<!--                            </figure>-->
-<!--                            <figure class="plus">-->
-<!--                                <img src="images/plus.svg" />-->
-<!--                            </figure>-->
-<!--                            <figure class="minus">-->
-<!--                                <img src="images/minus.svg" />-->
-<!--                            </figure>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                --><?php //}
-//            ?>
 
         </div>
         <div class="bottom">
@@ -92,25 +50,29 @@
 
             <?php
                 $productList = [
-//                    [
-//                        "title" =>      "Calvé Pindakaas 400gr",
-//                        "image" =>      "pindakaas.png",
-//                        "price" =>      "2,80",
-//                        "expiration" => "12-2019",
-//                        "warning" =>    "yes",
-//                        "sidecards" =>  [
-//                            "sidecard1" => [
-//                                "title" =>      "Volkoren brood",
-//                                "image" =>      "volkoren.png",
-//                                "sticker" =>    "sticker-1.svg"
-//                            ],
-//                            "sidecard2" => [
-//                                "title" =>      "Aardbeiën jam",
-//                                "image" =>      "aardbeienjam.png",
-//                                "sticker" =>    "sticker-2.svg"
-//                            ]
-//                        ]
-//                    ],
+                    [
+                        "title" =>      "Calvé Pindakaas 400gr",
+                        "image" =>      "pindakaas.png",
+                        "price" =>      "2,80",
+                        "expiration" => "12-2019",
+                        "warning" =>    "yes",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Volkoren brood",
+                                "image" =>      "volkoren.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "5",
+                                "price" =>      "1,89"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Aardbeiën jam",
+                                "image" =>      "aardbeienjam.png",
+                                "sticker" =>    "sticker-2.svg",
+                                "row" =>        "6",
+                                "price" =>      "1,21"
+                            ]
+                        ]
+                    ],
                     [
                         "title" =>      "Sourcy 500ml",
                         "image" =>      "sourcy.png",
@@ -120,7 +82,7 @@
                         "sidecards" =>  [
                             "sidecard1" => [
                                 "title" =>      "Pink Lady appels",
-                                "image" =>      "appels.png",
+                                "image" =>      "pinklady.png",
                                 "sticker" =>    "sticker-3.svg",
                                 "row" =>        "1",
                                 "price" =>      "1,99"
@@ -157,63 +119,52 @@
                             ]
                         ]
                     ],
-//                    [
-//                        "title" =>      "Pickwick Earl Grey thee",
-//                        "image" =>      "pickwick.png",
-//                        "price" =>      "1,25",
-//                        "expiration" => "11-09-2019",
-//                        "warning" =>    "no",
-//                        "sidecards" =>  [
-//                            "sidecard1" => [
-//                                "title" =>      "Suiker 500gr",
-//                                "image" =>      "suiker.png",
-//                                "sticker" =>    "sticker-1.svg"
-//                            ],
-//                            "sidecard2" => [
-//                                "title" =>      "Melvita honing 375gr",
-//                                "image" =>      "honing.png",
-//                                "sticker" =>    "sticker-1.svg"
-//                            ]
-//                        ]
-//                    ],
-//                    [
-//                        "title" =>      "product 5",
-//                        "image" =>      "product5.png",
-//                        "price" =>      "6,66",
-//                        "expiration" => "11-11-2020",
-//                        "warning" =>    "no",
-//                        "sidecards" =>  [
-//                            "sidecard1" => [
-//                                "title" =>      "product 5 side 1",
-//                                "image" =>      "placeholder.png",
-//                                "sticker" =>    "sticker-1.svg"
-//                            ],
-//                            "sidecard2" => [
-//                                "title" =>      "product 5 side 2",
-//                                "image" =>      "placeholder.png",
-//                                "sticker" =>    "sticker-1.svg"
-//                            ]
-//                        ]
-//                    ],
-//                    [
-//                        "title" =>      "product 6",
-//                        "image" =>      "product6.png",
-//                        "price" =>      "4,20",
-//                        "expiration" => "11-11-2020",
-//                        "warning" =>    "no",
-//                        "sidecards" =>  [
-//                            "sidecard1" => [
-//                                "title" =>      "product 6 side 1",
-//                                "image" =>      "placeholder.png",
-//                                "sticker" =>    "sticker-1.svg"
-//                            ],
-//                            "sidecard2" => [
-//                                "title" =>      "product 6 side 2",
-//                                "image" =>      "placeholder.png",
-//                                "sticker" =>    "sticker-1.svg"
-//                            ]
-//                        ]
-//                    ],
+                    [
+                        "title" =>      "Pickwick Earl Grey thee",
+                        "image" =>      "pickwick.png",
+                        "price" =>      "1,25",
+                        "expiration" => "11-09-2019",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Suiker 500gr",
+                                "image" =>      "suiker.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "4",
+                                "price" =>      "3,89"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Melvita honing 375gr",
+                                "image" =>      "honing.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "6",
+                                "price" =>      "2,49"
+                            ]
+                        ]
+                    ],
+                    [
+                        "title" =>      "Dubbel Frisss 1l",
+                        "image" =>      "dubbelfrisss.png",
+                        "price" =>      "3,79",
+                        "expiration" => "11-11-2020",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Croissant",
+                                "image" =>      "croissant.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "5",
+                                "price" =>      "0,75"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Twix",
+                                "image" =>      "twix.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "8",
+                                "price" =>      "0,60"
+                            ]
+                        ]
+                    ],
                 ];
 
                 $counter = 1;

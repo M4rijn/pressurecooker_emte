@@ -152,7 +152,7 @@ span.bold{
     margin: 6px 0 0 10px;
 }
 
-.shopping-list .shopping-list-items .row.just-added{
+.shopping-list .shopping-list-items .row.justadded{
     animation: row-just-added 1s;
 }
 
@@ -166,7 +166,7 @@ span.bold{
         color: #fff;
     }
     100% {
-        background-color: #e2e6e8;
+        background-color: #dfdfd0;
         color: #333333;
     }
 }
