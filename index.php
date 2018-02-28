@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Title</title>
+    <title>Allescænner</title>
     <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
     <script src="vendor/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="javascript.js"></script>
@@ -36,7 +36,7 @@
                 <h4>Totaalbedrag:</h4>
             </div>
             <div class="right">
-                <h4>&euro;127,63</h4>
+                <h4>&euro;<span></span></h4>
             </div>
         </div>
     </div>
@@ -143,7 +143,7 @@
                         ]
                     ],
                     [
-                        "title" =>      "Dubbel Frisss 1l",
+                        "title" =>      "Dubbel Frisss 1L",
                         "image" =>      "dubbelfrisss.png",
                         "price" =>      "3,79",
                         "expiration" => "11-11-2020",
