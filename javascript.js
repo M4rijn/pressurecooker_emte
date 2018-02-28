@@ -17,7 +17,6 @@ function init() {
         ["6", "Bonduelle erwten 500gr", "2,30"],
         ["6", "Calvé Pindakaas 400gr", "2,80"],
         ["7", "Duivis Borrelnootjes 600gr.", "2,40"],
-        ["8", "Coca cola 4 pack", "7,99"],
         ["8", "Dubbel Frisss 1L", "3,79"],
         ["1", "Bananen", "3,10"],
         ["1", "Paprika", "1,40"]
@@ -138,7 +137,7 @@ function init() {
     });
 
     function scannedProduct(product){
-        $(".product").removeClass("active");
+        $(".product, .welcome").removeClass("active");
         $(".product"+product).addClass("active");
 
         var name = $(".product"+product+" .card-big .card-header h3").text();

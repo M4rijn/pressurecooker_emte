@@ -46,6 +46,71 @@
     </div>
 
     <div class="main">
+
+        <div class="welcome active">
+
+            <div class="welcome-text">
+                <h2>Welkom John Doe</h2>
+                <p>Je hebt op dit moment 6 punten</p>
+
+            </div>
+
+            <figure class="logo">
+                <img src="images/logo_emte.svg" />
+            </figure>
+
+            <div class="additional-text">
+                Speciaal geselecteerd voor jou:
+            </div>
+
+            <div class="cards">
+
+                <div class="card middle-card middle-card-1">
+                    <div class="card-header">
+                        <h5>Coca Cola 4-pack</h5>
+                    </div>
+
+                    <div class="card-inner card-middle-inner">
+                        <figure class="card-image card-middle-image">
+                            <img class="image" src="images/coca-cola.png"/>
+                            <img class="sticker" src="images/sticker-2.svg"/>
+                        </figure>
+                    </div>
+
+                    <div class="card-bottom">
+                        <a href="#" class="add">Toevoegen</a>
+                    </div>
+                    <div class="additional-info">
+                        <div class="row"><p>8</p></div>
+                        <div class="price"><p>6,40</p></div>
+                    </div>
+                </div>
+
+                <div class="card middle-card middle-card-2">
+                    <div class="card-header">
+                        <h5>Suiker 500 gr</h5>
+                    </div>
+
+                    <div class="card-inner card-middle-inner">
+                        <figure class="card-image card-middle-image">
+                            <img class="image" src="images/suiker.png"/>
+                            <img class="sticker" src="images/sticker-4.svg"/>
+                        </figure>
+                    </div>
+
+                    <div class="card-bottom">
+                        <a href="#" class="add">Toevoegen</a>
+                    </div>
+                    <div class="additional-info">
+                        <div class="row"><p>4</p></div>
+                        <div class="price"><p>3,89</p></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
         <div class="scanned-products">
 
             <?php
