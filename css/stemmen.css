@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    font-family: "VAGRounded Light", Arial, sans-serif;
+    font-size: 14px;
+    line-height:1.5;
+}
+
+/** General **/
+
+.container{
+    margin:0 auto;
+    width: 1024px;
+    height: 768px;
+    background-color: #e2e6e8;
+    position: relative;
+}
+
+@font-face {
+    font-family: "VAGRounded Light";
+    src: url("../fonts/VAGRounded-Light.ttf");
+}
+
+@font-face {
+    font-family: "Rockwell Regular";
+    src: url("../fonts/ROCK.TTF");
+}
+
+h3{
+    font-family: "Rockwell Regular", Serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+}
+
+span.bold{
+    font-weight: bold;
+}
+
+/* Vote container */
+
+.container-vote{
+    background: #dfdfd0;
+}
