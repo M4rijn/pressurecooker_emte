@@ -324,10 +324,10 @@
             <div class="vote-screen">
                 <div class="left">
 
-                    <h3>Coca cola</h3>
+                    <h3>Komkommer</h3>
 
                     <figure class="product">
-                        <img src="images/coca-cola.png"/>
+                        <img src="images/komkommer.png"/>
                     </figure>
 
                     <figure class="arrow">
