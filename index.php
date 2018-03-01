@@ -321,47 +321,74 @@
 
             </div>
 
-            <div class="cards">
+            <div class="vote-screen">
+                <div class="left">
 
-                <div class="card middle-card middle-card-1">
-                    <div class="card-header">
-                        <h5>Komkommer</h5>
-                    </div>
+                    <h3>Coca cola</h3>
 
-                    <div class="card-inner card-middle-inner">
-                        <figure class="card-image card-middle-image">
-                            <img class="image" src="images/komkommer.png"/>
-                            <img class="sticker" src="images/sticker-2.svg"/>
-                        </figure>
-                    </div>
+                    <figure class="product">
+                        <img src="images/coca-cola.png"/>
+                    </figure>
 
-                    <div class="card-bottom">
-                        <a href="#" data-product="0">Stem</a>
-                    </div>
+                    <figure class="arrow">
+                        <img data-product="0" src="images/arrow_left.svg"/>
+                    </figure>
+
                 </div>
+                <div class="right">
+                    <h3>Colgate Tandpasta</h3>
 
-                <div class="card middle-card middle-card-2">
-                    <div class="card-header">
-                        <h5>Colgate Tandpasta</h5>
-                    </div>
+                    <figure class="product">
+                        <img src="images/tandpasta.png"/>
+                    </figure>
 
-                    <div class="card-inner card-middle-inner">
-                        <figure class="card-image card-middle-image">
-                            <img class="image" src="images/tandpasta.png"/>
-                            <img class="sticker" src="images/sticker-4.svg"/>
-                        </figure>
-                    </div>
-
-                    <div class="card-bottom">
-                        <a href="#" data-product="1">Stem</a>
-                    </div>
-                    <div class="additional-info">
-                        <div class="row"><p>4</p></div>
-                        <div class="price"><p>3,89</p></div>
-                    </div>
+                    <figure class="arrow">
+                        <img data-product="1" src="images/arrow_right.svg"/>
+                    </figure>
                 </div>
-
             </div>
+
+<!--            <div class="cards">-->
+<!---->
+<!--                <div class="card middle-card middle-card-1">-->
+<!--                    <div class="card-header">-->
+<!--                        <h5>Komkommer</h5>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="card-inner card-middle-inner">-->
+<!--                        <figure class="card-image card-middle-image">-->
+<!--                            <img class="image" src="images/komkommer.png"/>-->
+<!--                            <img class="sticker" src="images/sticker-2.svg"/>-->
+<!--                        </figure>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="card-bottom">-->
+<!--                        <a href="#" data-product="0">Stem</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="card middle-card middle-card-2">-->
+<!--                    <div class="card-header">-->
+<!--                        <h5>Colgate Tandpasta</h5>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="card-inner card-middle-inner">-->
+<!--                        <figure class="card-image card-middle-image">-->
+<!--                            <img class="image" src="images/tandpasta.png"/>-->
+<!--                            <img class="sticker" src="images/sticker-4.svg"/>-->
+<!--                        </figure>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="card-bottom">-->
+<!--                        <a href="#" data-product="1">Stem</a>-->
+<!--                    </div>-->
+<!--                    <div class="additional-info">-->
+<!--                        <div class="row"><p>4</p></div>-->
+<!--                        <div class="price"><p>3,89</p></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
         </div>
 
     </div>

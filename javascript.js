@@ -219,8 +219,8 @@ function init() {
 
     });
 
-    $(document).on("click touchend", ".vote .card", function () {
-        var product = $(this).find("a").data("product");
+    $(document).on("click touchend", ".vote .arrow", function () {
+        var product = $(this).find("img").data("product");
         console.log(product);
         var data = {
             vote: 1,
