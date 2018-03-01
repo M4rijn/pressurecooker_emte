@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <title>Allescænner</title>
     <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
@@ -13,6 +14,7 @@
     <!-- CSS -->
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/template.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -47,7 +49,7 @@
 
     <div class="main">
 
-        <div class="welcome active">
+        <div class="welcome">
 
             <div class="welcome-text">
                 <h2>Welkom Ellen</h2>
@@ -311,7 +313,7 @@
         </div>
     </div>
 
-    <div class="vote">
+    <div class="vote active">
 
         <div class="vote-inner">
             <div class="vote-text">
@@ -320,47 +322,45 @@
             </div>
 
             <div class="cards">
-                <div class="cards">
 
-                    <div class="card middle-card middle-card-1">
-                        <div class="card-header">
-                            <h5>Komkommer</h5>
-                        </div>
-
-                        <div class="card-inner card-middle-inner">
-                            <figure class="card-image card-middle-image">
-                                <img class="image" src="images/komkommer.png"/>
-                                <img class="sticker" src="images/sticker-2.svg"/>
-                            </figure>
-                        </div>
-
-                        <div class="card-bottom">
-                            <a href="#" data-product="0">Stem</a>
-                        </div>
+                <div class="card middle-card middle-card-1">
+                    <div class="card-header">
+                        <h5>Komkommer</h5>
                     </div>
 
-                    <div class="card middle-card middle-card-2">
-                        <div class="card-header">
-                            <h5>Colgate Tandpasta</h5>
-                        </div>
-
-                        <div class="card-inner card-middle-inner">
-                            <figure class="card-image card-middle-image">
-                                <img class="image" src="images/tandpasta.png"/>
-                                <img class="sticker" src="images/sticker-4.svg"/>
-                            </figure>
-                        </div>
-
-                        <div class="card-bottom">
-                            <a href="#" data-product="1">Stem</a>
-                        </div>
-                        <div class="additional-info">
-                            <div class="row"><p>4</p></div>
-                            <div class="price"><p>3,89</p></div>
-                        </div>
+                    <div class="card-inner card-middle-inner">
+                        <figure class="card-image card-middle-image">
+                            <img class="image" src="images/komkommer.png"/>
+                            <img class="sticker" src="images/sticker-2.svg"/>
+                        </figure>
                     </div>
 
+                    <div class="card-bottom">
+                        <a href="#" data-product="0">Stem</a>
+                    </div>
                 </div>
+
+                <div class="card middle-card middle-card-2">
+                    <div class="card-header">
+                        <h5>Colgate Tandpasta</h5>
+                    </div>
+
+                    <div class="card-inner card-middle-inner">
+                        <figure class="card-image card-middle-image">
+                            <img class="image" src="images/tandpasta.png"/>
+                            <img class="sticker" src="images/sticker-4.svg"/>
+                        </figure>
+                    </div>
+
+                    <div class="card-bottom">
+                        <a href="#" data-product="1">Stem</a>
+                    </div>
+                    <div class="additional-info">
+                        <div class="row"><p>4</p></div>
+                        <div class="price"><p>3,89</p></div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -374,16 +374,25 @@
             </div>
 
             <div class="bar-container">
-                <figure class="image-left">
-                    <img src="images/komkommer.png" />
-                </figure>
-                <div class="bar">
-                    <div class="bar-0"><p class="percentage"><span>65</span>&#37;</p></div>
-                    <div class="bar-1"><p class="percentage"><span>35</span>&#37;</p></div>
+                <div class="bar-left">
+                    <figure class="image-left">
+                        <img src="images/komkommer.png" />
+                    </figure>
+                    <p>Komkommer</p>
                 </div>
-                <figure class="image-right">
-                    <img src="images/tandpasta.png" />
-                </figure>
+
+                <div class="bar-mid">
+                    <div class="bar-0"><p class="percentage"><span></span>&#37;</p></div>
+                    <div class="bar-1"><p class="percentage"><span></span>&#37;</p></div>
+                </div>
+
+                <div class="bar-right">
+                    <figure class="image-right">
+                        <img src="images/tandpasta.png" />
+                    </figure>
+                    <p>Colgate Tandpasta</p>
+                </div>
+
             </div>
 
         </div>

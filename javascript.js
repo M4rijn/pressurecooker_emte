@@ -4,6 +4,10 @@ $(document).ready(function () {
 
 function init() {
 
+    document.addEventListener('gesturestart', function (e) {
+        e.preventDefault();
+    });
+
     //////////////////////////////////////////////////////////////// SHOPPING LIST
     var shoppingList = [
         ["2", "Maaltijdsalade Kip met pasta", "3,99"],
@@ -131,7 +135,7 @@ function init() {
     });
 
     function scannedProduct(product){
-        $(".product, .welcome, .vote").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results").removeClass("active");
         $(".product"+product).addClass("active");
 
         var name = $(".product"+product+" .card-big .card-header h3").text();
@@ -215,8 +219,8 @@ function init() {
 
     });
 
-    $(document).on("click touchend", ".vote .card-bottom a", function () {
-        var product = $(this).data("product");
+    $(document).on("click touchend", ".vote .card", function () {
+        var product = $(this).find("a").data("product");
         console.log(product);
         var data = {
             vote: 1,

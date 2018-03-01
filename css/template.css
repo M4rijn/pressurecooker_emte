@@ -393,8 +393,6 @@ span.bold{
 }
 
 .vote .cards{
-    display: flex;
-    justify-content: space-around;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -402,7 +400,8 @@ span.bold{
 
 .vote .cards .card.middle-card-1,
 .vote .cards .card.middle-card-2{
-    float: none;
+    float: left;
+    margin: 0 87px;
 }
 
 /****************************************************************************
@@ -422,18 +421,28 @@ span.bold{
     margin: 200px 0 0 0;
 }
 
+.vote-results .bar-container .bar-left,
+.vote-results .bar-container .bar-right{
+    float: left;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.vote-results .bar-container .bar-right{
+    float: right;
+}
+
 .vote-results .bar-container .image-left,
 .vote-results .bar-container .image-right{
     position: relative;
     float: left;
-    width: 150px;
     height: 150px;
+    width: 100%;
     border: 2px dotted #77b700;
     background: #dfdfd0;
-}
-
-.vote-results .bar-container .image-right{
-    float: right;
+    border-radius: 10px;
 }
 
 .vote-results .bar-container img{
@@ -449,7 +458,7 @@ span.bold{
     right: 0;
 }
 
-.vote-results .bar-container .bar{
+.vote-results .bar-container .bar-mid{
     width: calc(100% - 348px);
     border-radius: 10px;
     float: left;
@@ -457,8 +466,8 @@ span.bold{
     margin: 50px 20px 0 20px;
 }
 
-.vote-results .bar-container .bar .bar-0,
-.vote-results .bar-container .bar .bar-1{
+.vote-results .bar-container .bar-mid .bar-0,
+.vote-results .bar-container .bar-mid .bar-1{
     background: #0E6941;
     height: 60px;
     float: left;
@@ -466,13 +475,13 @@ span.bold{
     border-radius: 10px 0 0 10px;
 }
 
-.vote-results .bar-container .bar .bar-1{
+.vote-results .bar-container .bar-mid .bar-1{
     background: #77b700;
     width: 35%;
     border-radius: 0 10px 10px 0;
 }
 
-.vote-results .bar-container .bar p{
+.vote-results .bar-container .bar-mid p{
     color: #ffffff;
     width: 100%;
     text-align: center;
@@ -558,6 +567,7 @@ span.bold{
 .card .card-header h5{ /* small */
     padding: 3px 0;
 }
+
 
 .card .card-inner .card-image{
     position: relative;
