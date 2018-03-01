@@ -17,8 +17,7 @@ function init() {
         ["6", "Bonduelle erwten 500gr", "2,30"],
         ["6", "Calvé Pindakaas 400gr", "2,80"],
         ["7", "Duivis Borrelnootjes 600gr.", "2,40"],
-        ["8", "Coca cola 4 pack", "7,99"],
-        ["8", "Dubbel Frisss 1l", "3,79"],
+        ["8", "Dubbel Frisss 1L", "3,79"],
         ["1", "Bananen", "3,10"],
         ["1", "Paprika", "1,40"]
     ];
@@ -31,7 +30,18 @@ function init() {
 
         shoppingList.sort();
 
+        var totalprice = 0;
         $.each(shoppingList, function (key, value) {
+
+            var replacedecimal = value[2].replace(",", ".");
+
+            var num = parseFloat(replacedecimal);
+
+            console.log("var num = "+num);
+
+            totalprice += num;
+            //
+            console.log("var totalprice = "+totalprice);
 
             if(value[0] === "checked"){
                 value[0] = "<img class='check' src='images/checked.svg' />";
@@ -63,6 +73,8 @@ function init() {
             $(".shopping-list-items").append(row);
 
         });
+
+        $(".bottom .right h4 span").text(totalprice.toFixed(2).toString().replace(".", ","));
     }
 
     //Temp
@@ -125,7 +137,7 @@ function init() {
     });
 
     function scannedProduct(product){
-        $(".product").removeClass("active");
+        $(".product, .welcome").removeClass("active");
         $(".product"+product).addClass("active");
 
         var name = $(".product"+product+" .card-big .card-header h3").text();
@@ -144,7 +156,7 @@ function init() {
 
     //////////////////////////////////////////////////////////////// ADD TO SHOPPING LIST
 
-    $(document).on("click touchstart", ".add", function () {
+    $(document).on("click touchsend", ".add", function () {
 
         var $thisCard = $(this).closest(".card");
 
@@ -167,13 +179,13 @@ function init() {
 
     });
 
-    $(document).on("click touchstart", ".shopping-list-items .row", function () {
+    $(document).on("click touchend", ".shopping-list-items .row", function () {
         var $this = $(this);
         $(".shopping-list .row").removeClass("active");
         $this.addClass("active");
     });
 
-    $(document).on("click touchstart", ".shopping-list .row .shopping-list-active-buttons .delete", function () {
+    $(document).on("click touchend", ".shopping-list .row .shopping-list-active-buttons .delete", function () {
         var name = $(this).closest(".row").find(".collumn2 p").text();
         var counter = 0;
         $.each(shoppingList, function (key, value) {

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Title</title>
+    <title>Allescænner</title>
     <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
     <script src="vendor/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="javascript.js"></script>
@@ -36,7 +36,7 @@
                 <h4>Totaalbedrag:</h4>
             </div>
             <div class="right">
-                <h4>&euro;127,63</h4>
+                <h4>&euro;<span></span></h4>
             </div>
         </div>
     </div>
@@ -46,6 +46,71 @@
     </div>
 
     <div class="main">
+
+        <div class="welcome active">
+
+            <div class="welcome-text">
+                <h2>Welkom John Doe</h2>
+                <p>Je hebt op dit moment 6 punten</p>
+
+            </div>
+
+            <figure class="logo">
+                <img src="images/logo_emte.svg" />
+            </figure>
+
+            <div class="additional-text">
+                Speciaal geselecteerd voor jou:
+            </div>
+
+            <div class="cards">
+
+                <div class="card middle-card middle-card-1">
+                    <div class="card-header">
+                        <h5>Coca Cola 4-pack</h5>
+                    </div>
+
+                    <div class="card-inner card-middle-inner">
+                        <figure class="card-image card-middle-image">
+                            <img class="image" src="images/coca-cola.png"/>
+                            <img class="sticker" src="images/sticker-2.svg"/>
+                        </figure>
+                    </div>
+
+                    <div class="card-bottom">
+                        <a href="#" class="add">Toevoegen</a>
+                    </div>
+                    <div class="additional-info">
+                        <div class="row"><p>8</p></div>
+                        <div class="price"><p>6,40</p></div>
+                    </div>
+                </div>
+
+                <div class="card middle-card middle-card-2">
+                    <div class="card-header">
+                        <h5>Suiker 500 gr</h5>
+                    </div>
+
+                    <div class="card-inner card-middle-inner">
+                        <figure class="card-image card-middle-image">
+                            <img class="image" src="images/suiker.png"/>
+                            <img class="sticker" src="images/sticker-4.svg"/>
+                        </figure>
+                    </div>
+
+                    <div class="card-bottom">
+                        <a href="#" class="add">Toevoegen</a>
+                    </div>
+                    <div class="additional-info">
+                        <div class="row"><p>4</p></div>
+                        <div class="price"><p>3,89</p></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
         <div class="scanned-products">
 
             <?php
@@ -143,7 +208,7 @@
                         ]
                     ],
                     [
-                        "title" =>      "Dubbel Frisss 1l",
+                        "title" =>      "Dubbel Frisss 1L",
                         "image" =>      "dubbelfrisss.png",
                         "price" =>      "3,79",
                         "expiration" => "11-11-2020",
