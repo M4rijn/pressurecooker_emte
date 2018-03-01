@@ -49,7 +49,7 @@
 
     <div class="main">
 
-        <div class="welcome">
+        <div class="welcome active">
 
             <div class="welcome-text">
                 <h2>Welkom Ellen</h2>
@@ -313,7 +313,7 @@
         </div>
     </div>
 
-    <div class="vote active">
+    <div class="vote">
 
         <div class="vote-inner">
             <div class="vote-text">
