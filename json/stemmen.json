@@ -1,16 +1,1 @@
-{
-    "stuntName": "StuntStemmen",
-    "active": true,
-    "voteProducts": [
-      {
-        "productName": "Product1",
-        "numberVotes": 50,
-        "image": "../images/product1.png"
-      },
-      {
-        "productName": "Product2",
-        "numberVotes": 12,
-        "image": "../images/product2.png"
-      }
-    ]
-  }
+{"stuntName":"StuntStemmen","active":true,"voteProducts":[{"productName":"1 kilo peren","numberVotes":20,"image":"..\/images\/product1.png"},{"productName":"1 kilo appels","numberVotes":13,"image":"..\/images\/product2.png"}]}
