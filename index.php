@@ -47,10 +47,10 @@
 
     <div class="main">
 
-        <div class="welcome">
+        <div class="welcome active">
 
             <div class="welcome-text">
-                <h2>Welkom John Doe</h2>
+                <h2>Welkom Ellen</h2>
                 <p>Je hebt op dit moment 6 punten</p>
 
             </div>
@@ -335,11 +335,7 @@
                         </div>
 
                         <div class="card-bottom">
-                            <a href="#">Stem</a>
-                        </div>
-                        <div class="additional-info">
-                            <div class="row"><p>8</p></div>
-                            <div class="price"><p>6,40</p></div>
+                            <a href="#" data-product="0">Stem</a>
                         </div>
                     </div>
 
@@ -356,7 +352,7 @@
                         </div>
 
                         <div class="card-bottom">
-                            <a href="#">Stem</a>
+                            <a href="#" data-product="1">Stem</a>
                         </div>
                         <div class="additional-info">
                             <div class="row"><p>4</p></div>
@@ -370,7 +366,7 @@
 
     </div>
 
-    <div class="vote-results active">
+    <div class="vote-results">
 
         <div class="vote-results-inner">
             <div class="vote-results-text">
@@ -382,8 +378,8 @@
                     <img src="images/komkommer.png" />
                 </figure>
                 <div class="bar">
-                    <div class="bar-left"><p class="percentage"><span>65</span>&#37;</p></div>
-                    <div class="bar-right"><p class="percentage"><span>35</span>&#37;</p></div>
+                    <div class="bar-0"><p class="percentage"><span>65</span>&#37;</p></div>
+                    <div class="bar-1"><p class="percentage"><span>35</span>&#37;</p></div>
                 </div>
                 <figure class="image-right">
                     <img src="images/tandpasta.png" />

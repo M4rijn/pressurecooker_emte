@@ -457,8 +457,8 @@ span.bold{
     margin: 50px 20px 0 20px;
 }
 
-.vote-results .bar-container .bar .bar-left,
-.vote-results .bar-container .bar .bar-right{
+.vote-results .bar-container .bar .bar-0,
+.vote-results .bar-container .bar .bar-1{
     background: #0E6941;
     height: 60px;
     float: left;
@@ -466,7 +466,7 @@ span.bold{
     border-radius: 10px 0 0 10px;
 }
 
-.vote-results .bar-container .bar .bar-right{
+.vote-results .bar-container .bar .bar-1{
     background: #77b700;
     width: 35%;
     border-radius: 0 10px 10px 0;

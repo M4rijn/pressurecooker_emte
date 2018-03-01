@@ -37,11 +37,7 @@ function init() {
 
             var num = parseFloat(replacedecimal);
 
-            console.log("var num = "+num);
-
             totalprice += num;
-            //
-            console.log("var totalprice = "+totalprice);
 
             if(value[0] === "checked"){
                 value[0] = "<img class='check' src='images/checked.svg' />";
@@ -91,7 +87,7 @@ function init() {
 
     var channel = pusher.subscribe('my-channel');
     channel.bind('my-event', function(data) {
-        console.log(data.message);
+        // console.log(data.message);
 
         switch (parseInt(data.message)) {
             case 8888888888888:
@@ -121,14 +117,12 @@ function init() {
     $(document).on("keydown", function (event) {
         if (event.keyCode == 37) {
             scannedProduct(keypressCounter.toString());
-            console.log(keypressCounter);
             if(keypressCounter > 1){
                 keypressCounter--;
             }
             return false;
         } else if (event.keyCode == 39) {
             scannedProduct(keypressCounter.toString());
-            console.log(keypressCounter);
             if(keypressCounter < 5){
                 keypressCounter++;
             }
@@ -172,8 +166,6 @@ function init() {
 
             shoppingList.push(tempArr);
 
-            console.log(shoppingList);
-
             fillShoppingList();
         }
 
@@ -200,14 +192,39 @@ function init() {
 
     //////////////////////////////////////////////////////////////// VOTE
 
+    var urlJSON = 'json/stemmen.json';
+    var urlPHP = 'stuntstemmen/postvote.php';
+
+    $.getJSON(urlJSON,function(data) {
+        var totalvotes = data["voteProducts"][0]["numberVotes"] + data["voteProducts"][1]["numberVotes"];
+        for (var i = 0; i < 2; i++){
+            var percentage = Math.round(((100 / totalvotes) * data["voteProducts"][i]["numberVotes"]));
+            appendData(i, percentage);
+        }
+    });
+
+    function appendData(number, percentage){
+        $(".vote-results .bar-container .bar-"+number+" p.percentage span").text(percentage);
+        $(".vote-results .bar-container .bar-"+number).css("width", percentage+"%");
+    }
+
     $(document).on("click touchend", ".shopping-list .bottom .right h4", function () {
+
         $(".product, .welcome, .vote, .vote-results").removeClass("active");
         $(".vote").addClass("active");
+
     });
 
     $(document).on("click touchend", ".vote .card-bottom a", function () {
+        var product = $(this).data("product");
+        console.log(product);
+        var data = {
+            vote: 1,
+            product: product
+        };
+        $.post(urlPHP,data);
+
         $(".product, .welcome, .vote").removeClass("active");
         $(".vote-results").addClass("active");
-        console.log("we gaan naar de resultatenpagina");
     });
 }
