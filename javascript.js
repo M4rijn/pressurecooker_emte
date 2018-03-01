@@ -8,6 +8,19 @@ function init() {
         e.preventDefault();
     });
 
+    $(document).on("click touchend", "a.home", function () {
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
+        $(".welcome").addClass("active");
+    });
+    // $(document).on("click touchend", "a.folder", function () {
+    //     $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
+    //     $(".folder").addClass("active");
+    // });
+    $(document).on("click touchend", "a.btnsearch", function () {
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
+        $(".search").addClass("active");
+    });
+
     //////////////////////////////////////////////////////////////// SHOPPING LIST
     var shoppingList = [
         ["2", "Maaltijdsalade Kip met pasta", "3,99"],
@@ -135,7 +148,7 @@ function init() {
     });
 
     function scannedProduct(product){
-        $(".product, .welcome, .vote, .vote-results").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
         $(".product"+product).addClass("active");
 
         var name = $(".product"+product+" .card-big .card-header h3").text();
@@ -177,7 +190,7 @@ function init() {
 
     $(document).on("click touchend", ".shopping-list-items .row", function () {
         var $this = $(this);
-        $(".shopping-list .row").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
         $this.addClass("active");
     });
 
@@ -214,7 +227,7 @@ function init() {
 
     $(document).on("click touchend", ".shopping-list .bottom .right h4", function () {
 
-        $(".product, .welcome, .vote, .vote-results").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
         $(".vote").addClass("active");
 
     });
@@ -228,7 +241,24 @@ function init() {
         };
         $.post(urlPHP,data);
 
-        $(".product, .welcome, .vote").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
         $(".vote-results").addClass("active");
     });
+
+    //////////////////////////////////////////////////////////////// SEARCH
+
+    $(".search input").on("input", function () {
+        var value = $(this).val();
+        if(value.includes("ei")){
+            $(".search .suggestions").addClass("show");
+        } else {
+            $(".search .suggestions").removeClass("show");
+        }
+    });
+
+    $(document).on("click touchend", ".search .suggestions", function(){
+        $(".product, .welcome, .vote, .vote-results, .search").removeClass("active");
+        $(".search-result").addClass("active");
+    });
+
 }

@@ -113,6 +113,24 @@
 
         </div>
 
+
+        <div class="search">
+            <div class="search-inner">
+                <div class="search-bar">
+                    <input type="text" />
+                </div>
+                <div class="suggestions">
+                    <p>Ei</p>
+                    <p>Eieren</p>
+                    <p>Eiersalade</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-result">
+
+        </div>
+
         <div class="scanned-products">
 
             <?php
@@ -428,9 +446,9 @@
 
     <div class="buttons">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Folder</a></li>
-            <li><a href="#">Zoeken</a></li>
+            <li><a class="home" href="#">Home</a></li>
+            <li><a class="folder"  href="#">Folder</a></li>
+            <li><a class="btnsearch"  href="#">Zoeken</a></li>
         </ul>
     </div>
 

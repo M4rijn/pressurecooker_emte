@@ -292,16 +292,16 @@ span.bold{
 ----------------------------------------------------------------------------- SCANNED PRODUCTS
 **/
 
-.main .scanned-products{
+.scanned-products{
     float: left;
 }
 
-.main .scanned-products .side-cards-header{
+.scanned-products .side-cards-header{
     width: 100%;
     height: 40px;
 }
 
-.main .scanned-products .side-cards-header h5{
+.scanned-products .side-cards-header h5{
     padding: 6px 0 0 0;
 }
 
@@ -309,16 +309,24 @@ span.bold{
 ----------------------------------------------------------------------------- WELCOME
 **/
 
+.search,
+.search-result,
 .welcome{
     float: left;
     margin: 40px;
     width: calc(100% - 80px);
     height: 578px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 0;
     opacity: 0;
 }
 
+.search.active,
+.search-result.active,
 .welcome.active{
     opacity: 1;
     z-index: 2;
@@ -351,6 +359,57 @@ span.bold{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/****************************************************************************
+----------------------------------------------------------------------------- SEARCH
+**/
+
+.search-bar{
+    width: 100%;
+}
+
+.search-bar input{
+    width: 100%;
+    background: none;
+    border: 1px solid #77b700;
+    height: 30px;
+    border-radius: 15px;
+    background: #e2e6e8;
+    font-size: 20px;
+    font-family: "VAGRounded Light", sans-serif;
+    padding: 0 0 0 20px;
+    color: #717171;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.suggestions{
+    float: left;
+    width: 100%;
+    background: #77b700;
+    border-radius: 15px;
+    padding: 30px 0 10px 20px;
+    margin: -20px 0 0 0;
+    color: #e2e6e8;
+    font-size: 18px;
+    display: none;
+    opacity: 0;
+}
+
+.suggestions.show{
+    opacity: 1;
+    display: block;
+}
+
+.search-result{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/plattegrond.png");
+    background-size: 100% 100%;
 }
 
 /****************************************************************************
