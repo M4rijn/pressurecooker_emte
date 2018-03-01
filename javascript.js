@@ -137,7 +137,7 @@ function init() {
     });
 
     function scannedProduct(product){
-        $(".product, .welcome").removeClass("active");
+        $(".product, .welcome, .vote").removeClass("active");
         $(".product"+product).addClass("active");
 
         var name = $(".product"+product+" .card-big .card-header h3").text();
@@ -196,5 +196,18 @@ function init() {
             }
             counter++;
         });
+    });
+
+    //////////////////////////////////////////////////////////////// VOTE
+
+    $(document).on("click touchend", ".shopping-list .bottom .right h4", function () {
+        $(".product, .welcome, .vote, .vote-results").removeClass("active");
+        $(".vote").addClass("active");
+    });
+
+    $(document).on("click touchend", ".vote .card-bottom a", function () {
+        $(".product, .welcome, .vote").removeClass("active");
+        $(".vote-results").addClass("active");
+        console.log("we gaan naar de resultatenpagina");
     });
 }

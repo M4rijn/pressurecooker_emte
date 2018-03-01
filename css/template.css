@@ -354,6 +354,133 @@ span.bold{
 }
 
 /****************************************************************************
+----------------------------------------------------------------------------- VOTE
+**/
+
+.vote,
+.vote-results{
+    float: left;
+    width: calc(100%);
+    height: 768px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background: #e2e6e8;
+}
+
+.vote-results.active,
+.vote.active{
+    opacity: 1;
+    z-index: 2;
+}
+
+.vote-results-inner,
+.vote-inner{
+    float: left;
+    margin: 40px;
+    width: calc(100% - 80px);
+    height: 688px;
+    position: relative;
+}
+
+.vote-results .vote-results-text,
+.vote .vote-text{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.vote .cards{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.vote .cards .card.middle-card-1,
+.vote .cards .card.middle-card-2{
+    float: none;
+}
+
+/****************************************************************************
+----------------------------------------------------------------------------- VOTE RESULTS
+**/
+
+.vote-results-inner{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
+}
+
+.vote-results .bar-container{
+    float: left;
+    width: 100%;
+    height: 60px;
+    margin: 200px 0 0 0;
+}
+
+.vote-results .bar-container .image-left,
+.vote-results .bar-container .image-right{
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: 2px dotted #77b700;
+    background: #dfdfd0;
+}
+
+.vote-results .bar-container .image-right{
+    float: right;
+}
+
+.vote-results .bar-container img{
+    position: absolute;
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.vote-results .bar-container .bar{
+    width: calc(100% - 348px);
+    border-radius: 10px;
+    float: left;
+    height: 60px;
+    margin: 50px 20px 0 20px;
+}
+
+.vote-results .bar-container .bar .bar-left,
+.vote-results .bar-container .bar .bar-right{
+    background: #0E6941;
+    height: 60px;
+    float: left;
+    width: 65%;
+    border-radius: 10px 0 0 10px;
+}
+
+.vote-results .bar-container .bar .bar-right{
+    background: #77b700;
+    width: 35%;
+    border-radius: 0 10px 10px 0;
+}
+
+.vote-results .bar-container .bar p{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    margin: 12px 0 0 0;
+}
+
+/****************************************************************************
 ----------------------------------------------------------------------------- NAVIGATION Buttons
 **/
 
@@ -441,12 +568,14 @@ span.bold{
 .card .card-inner .card-image img.image{
     position: absolute;
     max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
     margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
 }
 
 .card .card-inner .card-image img.sticker{
@@ -474,7 +603,7 @@ span.bold{
     margin: 0 auto;
 }
 
-.card .card-bottom a.add:before{
+.card .card-bottom a:before{
     content: "";
     background: url("../images/add-to-list.svg") no-repeat;
     float: left;
@@ -487,10 +616,14 @@ span.bold{
     background: #333333;
 }
 
-.card.clicked .card-bottom a.add:before{
+.card.clicked .card-bottom a:before{
     background: url("../images/checked.svg") no-repeat;
     margin: 4px 0 0 -20px;
     height: 18px;
+}
+
+.vote .card .card-bottom a:before{
+    background: url("../images/vote.svg") no-repeat;
 }
 
 /* Big card */
