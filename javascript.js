@@ -24,10 +24,7 @@ function init() {
     //////////////////////////////////////////////////////////////// SHOPPING LIST
     var shoppingList = [
         ["2", "Maaltijdsalade Kip met pasta", "3,99"],
-        ["2", "Sourcy 500ml", "1,49"],
         ["2", "Lipton Ice Tea Peach 500ml", "1,89"],
-        ["2", "Rozijnen 300gr", "1,20"],
-        ["2", "Groene druiven 400gr", "2,50"],
         ["5", "Tijgerbrood", "0,80"],
         ["6", "Maggi lasagnamix 4 pers.", "6,40"],
         ["6", "Pickwick Earl Grey thee", "1,25"],
@@ -36,7 +33,13 @@ function init() {
         ["7", "Duivis Borrelnootjes 600gr.", "2,40"],
         ["8", "Dubbel Frisss 1L", "3,79"],
         ["1", "Bananen", "3,10"],
-        ["1", "Paprika", "1,40"]
+        ["1", "Paprika", "1,40"],
+        ["5", "Roerbakmie", "0,99"],
+        ["6", "Kaassticks", "0,99"],
+        ["7", "Pringles Sour & Onion", "1,29"],
+        ["1", "Pastasaus pittig", "0,99"],
+        ["6", "Granenbiscuits", "0,99"],
+        ["4", "LU Crackers", "1,29"]
     ];
 
     fillShoppingList();
@@ -111,21 +114,49 @@ function init() {
                 // Calvé pindakaas
                 scannedProduct("1");
                 break;
-            case 2222222222222:
-                /// Sourcy 500ml
-                scannedProduct("2");
-                break;
-            case 1111111111116:
+            case 8711200197002:
                 // Lipton ice tea
-                scannedProduct("3");
+                scannedProduct("2");
                 break;
             case 3333333333338:
                 // Pickwick earl grey
+                scannedProduct("3");
+                break;
+            case 8713300042435:
+                // Dubbel Frisss
                 scannedProduct("4");
                 break;
-            case 3333333333338:
-                // Dubbel Frisss
+            case 8714700999237:
+                // Roerbakmie
                 scannedProduct("5");
+                break;
+            case 8710458020926:
+                // Kaassticks
+                scannedProduct("6");
+                break;
+            case 5053990127740:
+                // Pringles Sour & Onion
+                scannedProduct("7");
+                break;
+            case 8710624161255:
+                // Pastasaus
+                scannedProduct("8");
+                break;
+            case 8710624190231:
+                // Oke Cola
+                scannedProduct("9");
+                break;
+            case 8710458017629:
+                // Granenbiscuit
+                scannedProduct("10");
+                break;
+            case 8710458025518:
+                // Mienestjes
+                scannedProduct("11");
+                break;
+            case 7622210475152:
+                // LU Crackers
+                scannedProduct("12");
                 break;
         }
     });
@@ -140,7 +171,7 @@ function init() {
             return false;
         } else if (event.keyCode == 39) {
             scannedProduct(keypressCounter.toString());
-            if(keypressCounter < 5){
+            if(keypressCounter < 12){
                 keypressCounter++;
             }
             return false;

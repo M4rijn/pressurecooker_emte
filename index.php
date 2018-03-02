@@ -159,29 +159,6 @@
                         ]
                     ],
                     [
-                        "title" =>      "Sourcy 500ml",
-                        "image" =>      "sourcy.png",
-                        "price" =>      "1,49",
-                        "expiration" => "04-2022",
-                        "warning" =>    "no",
-                        "sidecards" =>  [
-                            "sidecard1" => [
-                                "title" =>      "Pink Lady appels",
-                                "image" =>      "pinklady.png",
-                                "sticker" =>    "sticker-3.svg",
-                                "row" =>        "1",
-                                "price" =>      "1,99"
-                            ],
-                            "sidecard2" => [
-                                "title" =>      "Sultana Fruitbiscuit",
-                                "image" =>      "sultana.png",
-                                "sticker" =>    "sticker-4.svg",
-                                "row" =>        "3",
-                                "price" =>      "0,89"
-                            ]
-                        ]
-                    ],
-                    [
                         "title" =>      "Lipton Ice Tea Peach 500ml",
                         "image" =>      "icetea.png",
                         "price" =>      "1,89",
@@ -247,6 +224,191 @@
                                 "sticker" =>    "sticker-1.svg",
                                 "row" =>        "8",
                                 "price" =>      "0,60"
+                            ]
+                        ]
+                    ],
+                    [
+                        "title" =>      "Roerbakmie",
+                        "image" =>      "roerbakmie.png",
+                        "price" =>      "0,99",
+                        "expiration" => "3-8-2019",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Mienestjes",
+                                "image" =>      "mie.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "5",
+                                "price" =>      "0,99"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Wokgroentenmix",
+                                "image" =>      "wokgroenten.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "2",
+                                "price" =>      "1,60"
+                            ]
+                        ]
+                    ],
+                    [
+                        "title" =>      "Kaassticks",
+                        "image" =>      "kaassticks.png",
+                        "price" =>      "0,99",
+                        "expiration" => "3-5-2018",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Lay's chips",
+                                "image" =>      "lays.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "7",
+                                "price" =>      "2,30"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Duyvis Borrelnootjes",
+                                "image" =>      "borrelnootjes.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "7",
+                                "price" =>      "3,20"
+                            ]
+                        ]
+                    ],
+                    [
+                        "title" =>      "Pringles Sour & Onion",
+                        "image" =>      "pringles.png",
+                        "price" =>      "1,96",
+                        "expiration" => "3-4-2018",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Oke Cola",
+                                "image" =>      "cola.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "7",
+                                "price" =>      "0,17"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Duyvis Borrelnootjes",
+                                "image" =>      "borrelnootjes.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "7",
+                                "price" =>      "3,20"
+                            ]
+                        ]
+                    ],
+                    [
+                        "title" =>      "Pastasaus pittig",
+                        "image" =>      "pastasaus.png",
+                        "price" =>      "1,09",
+                        "expiration" => "28-10-2019",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Pasta penne",
+                                "image" =>      "penne.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "7",
+                                "price" =>      "1,19"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Italiaanse groentemix",
+                                "image" =>      "italiaansegroentemix.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "2",
+                                "price" =>      "2,90"
+                            ]
+                        ]
+                    ],
+                    [
+                        "title" =>      "Oke Cola",
+                        "image" =>      "cola.png",
+                        "price" =>      "0,17",
+                        "expiration" => "28-10-2019",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Lay's chips",
+                                "image" =>      "lays.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "7",
+                                "price" =>      "2,30"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Nibbits",
+                                "image" =>      "nibbits.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "2",
+                                "price" =>      "1,50"
+                            ]
+                        ]
+                    ],
+                    [
+                        "title" =>      "Granenbiscuits",
+                        "image" =>      "granenbiscuits.png",
+                        "price" =>      "0,99",
+                        "expiration" => "9-9-2019",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Tropicana Ju d'orange",
+                                "image" =>      "tropicana.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "7",
+                                "price" =>      "1,30"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Campina melk 1L",
+                                "image" =>      "campinamelk.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "8",
+                                "price" =>      "0,87"
+                            ]
+                        ]
+                    ],
+                    [
+                        "title" =>      "Mienestjes",
+                        "image" =>      "mie.png",
+                        "price" =>      "0,99",
+                        "expiration" => "19-7-2018",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Conimex Bamimix",
+                                "image" =>      "bamimix.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "3",
+                                "price" =>      "0,87"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Lassie Toverrijst",
+                                "image" =>      "rijst.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "2",
+                                "price" =>      "0,87"
+                            ]
+                        ]
+                    ],
+
+                    [
+                        "title" =>      "LU Crackers",
+                        "image" =>      "minicrackers.png",
+                        "price" =>      "1,29",
+                        "expiration" => "19-7-2018",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Garlan roomkaas",
+                                "image" =>      "roomkaas.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "3",
+                                "price" =>      "1,20"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Eiersalade",
+                                "image" =>      "eiersalade.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "4",
+                                "price" =>      "1,39"
                             ]
                         ]
                     ],
