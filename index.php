@@ -52,7 +52,7 @@
         <div class="welcome">
 
             <div class="welcome-text">
-                <h2>Welkom Marijn</h2>
+                <h2>Welkom Branco</h2>
                 <p>Je hebt op dit moment 6 punten</p>
 
             </div>
@@ -318,7 +318,7 @@
         <div class="search">
             <div class="search-inner">
                 <div class="search-bar">
-                    <input type="text" />
+                    <input type="text" placeholder="Zoek hier je product"/>
                 </div>
                 <div class="suggestions">
                     <p>Ei</p>
