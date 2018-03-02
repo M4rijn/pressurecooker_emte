@@ -49,10 +49,10 @@
 
     <div class="main">
 
-        <div class="welcome active">
+        <div class="welcome">
 
             <div class="welcome-text">
-                <h2>Welkom Ellen</h2>
+                <h2>Welkom Marijn</h2>
                 <p>Je hebt op dit moment 6 punten</p>
 
             </div>
@@ -113,6 +113,207 @@
 
         </div>
 
+        <div class="folder">
+
+            <div class="folder-text">
+                <h2>Deze week in de folder</h2>
+            </div>
+
+            <div class="folder-card-caroussel">
+                <div class="folder-card-caroussel-inner">
+                    <div class="cards">
+                        <div class="card middle-card middle-card-1">
+                            <div class="card-header">
+                                <h5>Coca Cola 4-pack</h5>
+                            </div>
+
+                            <div class="card-inner card-middle-inner">
+                                <figure class="card-image card-middle-image">
+                                    <img class="image" src="images/coca-cola.png"/>
+                                    <img class="sticker" src="images/sticker-2.svg"/>
+                                </figure>
+                            </div>
+
+                            <div class="card-bottom">
+                                <a href="#" class="add">Toevoegen</a>
+                            </div>
+                            <div class="additional-info">
+                                <div class="row"><p>8</p></div>
+                                <div class="price"><p>6,40</p></div>
+                            </div>
+                        </div>
+
+                        <div class="card middle-card middle-card-2">
+                            <div class="card-header">
+                                <h5>Suiker 500gr</h5>
+                            </div>
+
+                            <div class="card-inner card-middle-inner">
+                                <figure class="card-image card-middle-image">
+                                    <img class="image" src="images/suiker.png"/>
+                                    <img class="sticker" src="images/sticker-2.svg"/>
+                                </figure>
+                            </div>
+
+                            <div class="card-bottom">
+                                <a href="#" class="add">Toevoegen</a>
+                            </div>
+                            <div class="additional-info">
+                                <div class="row"><p>8</p></div>
+                                <div class="price"><p>6,40</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card middle-card middle-card-1">
+                            <div class="card-header">
+                                <h5>Duyvis borrelnootjes</h5>
+                            </div>
+
+                            <div class="card-inner card-middle-inner">
+                                <figure class="card-image card-middle-image">
+                                    <img class="image" src="images/borrelnootjes.png"/>
+                                    <img class="sticker" src="images/sticker-2.svg"/>
+                                </figure>
+                            </div>
+
+                            <div class="card-bottom">
+                                <a href="#" class="add">Toevoegen</a>
+                            </div>
+                            <div class="additional-info">
+                                <div class="row"><p>8</p></div>
+                                <div class="price"><p>6,40</p></div>
+                            </div>
+                        </div>
+
+                        <div class="card middle-card middle-card-2">
+                            <div class="card-header">
+                                <h5>Lay's chips</h5>
+                            </div>
+
+                            <div class="card-inner card-middle-inner">
+                                <figure class="card-image card-middle-image">
+                                    <img class="image" src="images/lays.png"/>
+                                    <img class="sticker" src="images/sticker-2.svg"/>
+                                </figure>
+                            </div>
+
+                            <div class="card-bottom">
+                                <a href="#" class="add">Toevoegen</a>
+                            </div>
+                            <div class="additional-info">
+                                <div class="row"><p>8</p></div>
+                                <div class="price"><p>6,40</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card middle-card middle-card-1">
+                            <div class="card-header">
+                                <h5>Wokgroenten</h5>
+                            </div>
+
+                            <div class="card-inner card-middle-inner">
+                                <figure class="card-image card-middle-image">
+                                    <img class="image" src="images/wokgroenten.png"/>
+                                    <img class="sticker" src="images/sticker-2.svg"/>
+                                </figure>
+                            </div>
+
+                            <div class="card-bottom">
+                                <a href="#" class="add">Toevoegen</a>
+                            </div>
+                            <div class="additional-info">
+                                <div class="row"><p>8</p></div>
+                                <div class="price"><p>6,40</p></div>
+                            </div>
+                        </div>
+
+                        <div class="card middle-card middle-card-2">
+                            <div class="card-header">
+                                <h5>Volkoren boord</h5>
+                            </div>
+
+                            <div class="card-inner card-middle-inner">
+                                <figure class="card-image card-middle-image">
+                                    <img class="image" src="images/volkoren.png"/>
+                                    <img class="sticker" src="images/sticker-2.svg"/>
+                                </figure>
+                            </div>
+
+                            <div class="card-bottom">
+                                <a href="#" class="add">Toevoegen</a>
+                            </div>
+                            <div class="additional-info">
+                                <div class="row"><p>8</p></div>
+                                <div class="price"><p>6,40</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card middle-card middle-card-1">
+                            <div class="card-header">
+                                <h5>Campina Melk 1L</h5>
+                            </div>
+
+                            <div class="card-inner card-middle-inner">
+                                <figure class="card-image card-middle-image">
+                                    <img class="image" src="images/campinamelk.png"/>
+                                    <img class="sticker" src="images/sticker-2.svg"/>
+                                </figure>
+                            </div>
+
+                            <div class="card-bottom">
+                                <a href="#" class="add">Toevoegen</a>
+                            </div>
+                            <div class="additional-info">
+                                <div class="row"><p>8</p></div>
+                                <div class="price"><p>6,40</p></div>
+                            </div>
+                        </div>
+
+                        <div class="card middle-card middle-card-2">
+                            <div class="card-header">
+                                <h5>Aardbeienjam</h5>
+                            </div>
+
+                            <div class="card-inner card-middle-inner">
+                                <figure class="card-image card-middle-image">
+                                    <img class="image" src="images/aardbeienjam.png"/>
+                                    <img class="sticker" src="images/sticker-2.svg"/>
+                                </figure>
+                            </div>
+
+                            <div class="card-bottom">
+                                <a href="#" class="add">Toevoegen</a>
+                            </div>
+                            <div class="additional-info">
+                                <div class="row"><p>8</p></div>
+                                <div class="price"><p>6,40</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="folder-buttons">
+                <div class="left">
+                    <figure class="folder-button-right">
+                        <img src="images/left.svg" />
+                    </figure>
+                </div>
+                <div class="right">
+                    <figure class="folder-button-right">
+                        <img src="images/right.svg" />
+                    </figure>
+                </div>
+            </div>
+
+        </div>
 
         <div class="search">
             <div class="search-inner">
@@ -278,7 +479,7 @@
                         "image" =>      "pringles.png",
                         "price" =>      "1,96",
                         "expiration" => "3-4-2018",
-                        "warning" =>    "no",
+                        "warning" =>    "yes",
                         "sidecards" =>  [
                             "sidecard1" => [
                                 "title" =>      "Oke Cola",
@@ -493,6 +694,26 @@
         </div>
     </div>
 
+    <div class="idle active">
+
+        <div class="idle-inner">
+
+            <figure class="emte-logo">
+                <img src="images/logo_emte.svg" />
+            </figure>
+
+            <figure class="fijnproeverspas">
+                <img src="images/fijnproeverspas.png" />
+            </figure>
+
+            <figure class="arrow">
+                <img src="images/arrow-down.svg" />
+            </figure>
+
+        </div>
+
+    </div>
+
     <div class="vote">
 
         <div class="vote-inner">
@@ -528,47 +749,6 @@
                 </div>
             </div>
 
-<!--            <div class="cards">-->
-<!---->
-<!--                <div class="card middle-card middle-card-1">-->
-<!--                    <div class="card-header">-->
-<!--                        <h5>Komkommer</h5>-->
-<!--                    </div>-->
-<!---->
-<!--                    <div class="card-inner card-middle-inner">-->
-<!--                        <figure class="card-image card-middle-image">-->
-<!--                            <img class="image" src="images/komkommer.png"/>-->
-<!--                            <img class="sticker" src="images/sticker-2.svg"/>-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!---->
-<!--                    <div class="card-bottom">-->
-<!--                        <a href="#" data-product="0">Stem</a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!--                <div class="card middle-card middle-card-2">-->
-<!--                    <div class="card-header">-->
-<!--                        <h5>Colgate Tandpasta</h5>-->
-<!--                    </div>-->
-<!---->
-<!--                    <div class="card-inner card-middle-inner">-->
-<!--                        <figure class="card-image card-middle-image">-->
-<!--                            <img class="image" src="images/tandpasta.png"/>-->
-<!--                            <img class="sticker" src="images/sticker-4.svg"/>-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!---->
-<!--                    <div class="card-bottom">-->
-<!--                        <a href="#" data-product="1">Stem</a>-->
-<!--                    </div>-->
-<!--                    <div class="additional-info">-->
-<!--                        <div class="row"><p>4</p></div>-->
-<!--                        <div class="price"><p>3,89</p></div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!--            </div>-->
         </div>
 
     </div>
@@ -609,7 +789,7 @@
     <div class="buttons">
         <ul>
             <li><a class="home" href="#">Home</a></li>
-            <li><a class="folder"  href="#">Folder</a></li>
+            <li><a class="btnfolder"  href="#">Folder</a></li>
             <li><a class="btnsearch"  href="#">Zoeken</a></li>
         </ul>
     </div>

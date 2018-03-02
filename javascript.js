@@ -9,15 +9,15 @@ function init() {
     });
 
     $(document).on("click touchend", "a.home", function () {
-        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result, .folder, .idle").removeClass("active");
         $(".welcome").addClass("active");
     });
-    // $(document).on("click touchend", "a.folder", function () {
-    //     $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
-    //     $(".folder").addClass("active");
-    // });
+    $(document).on("click touchend", "a.btnfolder", function () {
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result, .folder, .idle").removeClass("active");
+        $(".folder").addClass("active");
+    });
     $(document).on("click touchend", "a.btnsearch", function () {
-        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result, .folder, .idle").removeClass("active");
         $(".search").addClass("active");
     });
 
@@ -30,7 +30,6 @@ function init() {
         ["6", "Pickwick Earl Grey thee", "1,25"],
         ["6", "Bonduelle erwten 500gr", "2,30"],
         ["6", "Calvé Pindakaas 400gr", "2,80"],
-        ["7", "Duivis Borrelnootjes 600gr.", "2,40"],
         ["8", "Dubbel Frisss 1L", "3,79"],
         ["1", "Bananen", "3,10"],
         ["1", "Paprika", "1,40"],
@@ -92,9 +91,6 @@ function init() {
 
         $(".bottom .right h4 span").text(totalprice.toFixed(2).toString().replace(".", ","));
     }
-
-    //Temp
-    // scannedProduct(1);
 
     /////////////////////////////////////////////// Enable pusher logging - don't include this in production
     var naamProduct;
@@ -179,7 +175,7 @@ function init() {
     });
 
     function scannedProduct(product){
-        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result, .folder, .idle").removeClass("active");
         $(".product"+product).addClass("active");
 
         var name = $(".product"+product+" .card-big .card-header h3").text();
@@ -221,7 +217,7 @@ function init() {
 
     $(document).on("click touchend", ".shopping-list-items .row", function () {
         var $this = $(this);
-        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
+        $(".row").removeClass("active");
         $this.addClass("active");
     });
 
@@ -258,7 +254,7 @@ function init() {
 
     $(document).on("click touchend", ".shopping-list .bottom .right h4", function () {
 
-        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result, .folder, .idle").removeClass("active");
         $(".vote").addClass("active");
 
     });
@@ -272,15 +268,34 @@ function init() {
         };
         $.post(urlPHP,data);
 
-        $(".product, .welcome, .vote, .vote-results, .search, .search-result").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results, .search, .search-result, .folder, .idle").removeClass("active");
         $(".vote-results").addClass("active");
+    });
+
+    //////////////////////////////////////////////////////////////// FOLDER
+
+    var margin = 0;
+    var carousselCounter = 1;
+    $(document).on("click touchend", ".folder .folder-buttons .left", function () {
+        if(carousselCounter >= 2){
+            margin += 634;
+            $(".folder .folder-card-caroussel-inner").css("margin-left", margin+"px");
+            carousselCounter--;
+        }
+    });
+    $(document).on("click touchend", ".folder .folder-buttons .right", function () {
+        if(carousselCounter <= 3){
+            margin -= 634;
+            $(".folder .folder-card-caroussel-inner").css("margin-left", margin+"px");
+            carousselCounter++;
+        }
     });
 
     //////////////////////////////////////////////////////////////// SEARCH
 
     $(".search input").on("input", function () {
         var value = $(this).val();
-        if(value.includes("ei")){
+        if(value.includes("Ei")){
             $(".search .suggestions").addClass("show");
         } else {
             $(".search .suggestions").removeClass("show");
@@ -288,8 +303,15 @@ function init() {
     });
 
     $(document).on("click touchend", ".search .suggestions", function(){
-        $(".product, .welcome, .vote, .vote-results, .search").removeClass("active");
+        $(".product, .welcome, .vote, .vote-results, .search, .folder, .idle").removeClass("active");
         $(".search-result").addClass("active");
+    });
+
+    //////////////////////////////////////////////////////////////// IDLE
+
+    $(document).on("click touchend", ".idle", function () {
+        $(".product, .welcome, .vote, .vote-results, .search, .folder, .idle").removeClass("active");
+        $(".welcome").addClass("active");
     });
 
 }

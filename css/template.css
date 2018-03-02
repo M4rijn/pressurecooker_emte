@@ -309,6 +309,7 @@ span.bold{
 ----------------------------------------------------------------------------- WELCOME
 **/
 
+.folder,
 .search,
 .search-result,
 .welcome{
@@ -325,6 +326,7 @@ span.bold{
     opacity: 0;
 }
 
+.folder.active,
 .search.active,
 .search-result.active,
 .welcome.active{
@@ -332,6 +334,7 @@ span.bold{
     z-index: 2;
 }
 
+.folder .folder-text,
 .welcome .welcome-text{
     float: left;
 }
@@ -360,6 +363,60 @@ span.bold{
     bottom: 0;
     width: 100%;
 }
+
+/****************************************************************************
+----------------------------------------------------------------------------- FOLDER
+**/
+
+.folder .folder-text{
+    width: 100%;
+}
+
+.folder .folder-card-caroussel{
+    border-top: 1px dotted #77b700;
+    border-bottom: 1px dotted #77b700;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    margin: 30px 0 0 0;
+    padding: 30px 0 30px 0;
+}
+
+.folder .folder-card-caroussel-inner{
+    width: 2536px;
+    transition: 0.5s ease-in-out;
+}
+
+.folder .folder-card-caroussel-inner .cards{
+    float: left;
+}
+
+.folder .folder-card-caroussel-inner .cards .card{
+    float: left;
+}
+
+.folder .folder-card-caroussel-inner .cards .middle-card-1{
+    margin: 0 40px 0 0;
+}
+
+.folder .folder-buttons{
+    width: 100%;
+    float: left;
+    margin: 20px 0 0 ;
+}
+
+.folder .folder-buttons .left,
+.folder .folder-buttons .right{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.folder .folder-buttons img{
+    width: 50px;
+    height: 50px;
+}
+
 
 /****************************************************************************
 ----------------------------------------------------------------------------- SEARCH
@@ -416,6 +473,7 @@ span.bold{
 ----------------------------------------------------------------------------- VOTE
 **/
 
+.idle,
 .vote,
 .vote-results{
     float: left;
@@ -429,12 +487,14 @@ span.bold{
     background: #e2e6e8;
 }
 
+.idle.active,
 .vote-results.active,
 .vote.active{
     opacity: 1;
     z-index: 2;
 }
 
+.idle-inner,
 .vote-results-inner,
 .vote-inner{
     float: left;
@@ -602,6 +662,52 @@ span.bold{
     text-align: center;
     font-size: 24px;
     margin: 12px 0 0 0;
+}
+
+/****************************************************************************
+----------------------------------------------------------------------------- IDLE
+**/
+
+.idle .emte-logo{
+    float: right;
+    margin: 30px 0 0 0;
+    width: 150px;
+}
+
+.idle .fijnproeverspas{
+    margin: 100px auto 0 auto;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.idle .fijnproeverspas img{
+    width: 500px;
+}
+
+.idle .arrow{
+    width: 100%;
+    float: left;
+    margin: 100px 0 0 0;
+    animation: up-and-down 2s infinite;
+}
+
+@keyframes up-and-down {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.idle .arrow img{
+    width: 50px;
+    margin: 0 60px 0 0;
+    float: right;
 }
 
 /****************************************************************************
