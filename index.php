@@ -52,8 +52,8 @@
         <div class="welcome">
 
             <div class="welcome-text">
-                <h2>Welkom Branco</h2>
-                <p>Je hebt op dit moment 6 punten</p>
+                <h2>Welkom Richard</h2>
+                <p>Je hebt op dit moment 10 punten</p>
 
             </div>
 
@@ -90,13 +90,13 @@
 
                 <div class="card middle-card middle-card-2">
                     <div class="card-header">
-                        <h5>Suiker 500 gr</h5>
+                        <h5>Kellogg's All Bran Plus</h5>
                     </div>
 
                     <div class="card-inner card-middle-inner">
                         <figure class="card-image card-middle-image">
-                            <img class="image" src="images/suiker.png"/>
-                            <img class="sticker" src="images/sticker-4.svg"/>
+                            <img class="image" src="images/kellogs.png"/>
+                            <img class="sticker" src="images/sticker-1.svg"/>
                         </figure>
                     </div>
 
@@ -104,8 +104,8 @@
                         <a href="#" class="add">Toevoegen</a>
                     </div>
                     <div class="additional-info">
-                        <div class="row"><p>4</p></div>
-                        <div class="price"><p>3,89</p></div>
+                        <div class="row"><p>5</p></div>
+                        <div class="price"><p>2,60</p></div>
                     </div>
                 </div>
 
@@ -145,13 +145,13 @@
 
                         <div class="card middle-card middle-card-2">
                             <div class="card-header">
-                                <h5>Suiker 500gr</h5>
+                                <h5>Pringles Sour & Onion</h5>
                             </div>
 
                             <div class="card-inner card-middle-inner">
                                 <figure class="card-image card-middle-image">
-                                    <img class="image" src="images/suiker.png"/>
-                                    <img class="sticker" src="images/sticker-2.svg"/>
+                                    <img class="image" src="images/pringles.png"/>
+                                    <img class="sticker" src="images/sticker-1.svg"/>
                                 </figure>
                             </div>
 
@@ -159,8 +159,8 @@
                                 <a href="#" class="add">Toevoegen</a>
                             </div>
                             <div class="additional-info">
-                                <div class="row"><p>8</p></div>
-                                <div class="price"><p>6,40</p></div>
+                                <div class="row"><p>7</p></div>
+                                <div class="price"><p>1,96</p></div>
                             </div>
                         </div>
                     </div>
@@ -479,7 +479,7 @@
                         "image" =>      "pringles.png",
                         "price" =>      "1,96",
                         "expiration" => "3-4-2018",
-                        "warning" =>    "yes",
+                        "warning" =>    "no",
                         "sidecards" =>  [
                             "sidecard1" => [
                                 "title" =>      "Oke Cola",
@@ -589,7 +589,6 @@
                             ]
                         ]
                     ],
-
                     [
                         "title" =>      "LU Crackers",
                         "image" =>      "minicrackers.png",
@@ -613,6 +612,29 @@
                             ]
                         ]
                     ],
+                    [
+                        "title" =>      "Kellogg's All Bran Plus",
+                        "image" =>      "kellogs.png",
+                        "price" =>      "2,60",
+                        "expiration" => "17-5-2018",
+                        "warning" =>    "no",
+                        "sidecards" =>  [
+                            "sidecard1" => [
+                                "title" =>      "Campina melk 1L",
+                                "image" =>      "campinamelk.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "8",
+                                "price" =>      "0,87"
+                            ],
+                            "sidecard2" => [
+                                "title" =>      "Volkoren brood",
+                                "image" =>      "volkoren.png",
+                                "sticker" =>    "sticker-1.svg",
+                                "row" =>        "5",
+                                "price" =>      "1,89"
+                            ]
+                        ]
+                    ]
                 ];
 
                 $counter = 1;

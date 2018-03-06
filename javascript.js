@@ -23,22 +23,22 @@ function init() {
 
     //////////////////////////////////////////////////////////////// SHOPPING LIST
     var shoppingList = [
-        ["2", "Maaltijdsalade Kip met pasta", "3,99"],
-        ["2", "Lipton Ice Tea Peach 500ml", "1,89"],
-        ["5", "Tijgerbrood", "0,80"],
-        ["6", "Maggi lasagnamix 4 pers.", "6,40"],
-        ["6", "Pickwick Earl Grey thee", "1,25"],
-        ["6", "Bonduelle erwten 500gr", "2,30"],
+        // ["2", "Maaltijdsalade Kip met pasta", "3,99"],
+        // ["2", "Lipton Ice Tea Peach 500ml", "1,89"],
+        // ["5", "Tijgerbrood", "0,80"],
+        // ["6", "Maggi lasagnamix 4 pers.", "6,40"],
+        // ["6", "Pickwick Earl Grey thee", "1,25"],
+        // ["6", "Bonduelle erwten 500gr", "2,30"],
         ["6", "Calvé Pindakaas 400gr", "2,80"],
-        ["8", "Dubbel Frisss 1L", "3,79"],
-        ["1", "Bananen", "3,10"],
-        ["1", "Paprika", "1,40"],
-        ["5", "Roerbakmie", "0,99"],
-        ["6", "Kaassticks", "0,99"],
-        ["7", "Pringles Sour & Onion", "1,29"],
-        ["1", "Pastasaus pittig", "0,99"],
-        ["6", "Granenbiscuits", "0,99"],
-        ["4", "LU Crackers", "1,29"]
+        // ["8", "Dubbel Frisss 1L", "3,79"],
+        // ["1", "Bananen", "3,10"],
+        // ["1", "Paprika", "1,40"],
+        ["5", "Roerbakmie", "0,99"]
+        // ["6", "Kaassticks", "0,99"],
+        // ["7", "Pringles Sour & Onion", "1,29"],
+        // ["1", "Pastasaus pittig", "0,99"],
+        // ["6", "Granenbiscuits", "0,99"],
+        // ["4", "LU Crackers", "1,29"]
     ];
 
     fillShoppingList();
@@ -154,6 +154,10 @@ function init() {
                 // LU Crackers
                 scannedProduct("12");
                 break;
+            case 3159470001424:
+                // Kellogg's
+                scannedProduct("13");
+                break;
         }
     });
 
@@ -167,7 +171,7 @@ function init() {
             return false;
         } else if (event.keyCode == 39) {
             scannedProduct(keypressCounter.toString());
-            if(keypressCounter < 12){
+            if(keypressCounter < 13){
                 keypressCounter++;
             }
             return false;
