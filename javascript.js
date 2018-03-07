@@ -240,21 +240,21 @@ function init() {
 
     //////////////////////////////////////////////////////////////// VOTE
 
-    var urlJSON = 'json/stemmen.json';
-    var urlPHP = 'stuntstemmen/postvote.php';
-
-    $.getJSON(urlJSON,function(data) {
-        var totalvotes = data["voteProducts"][0]["numberVotes"] + data["voteProducts"][1]["numberVotes"];
-        for (var i = 0; i < 2; i++){
-            var percentage = Math.round(((100 / totalvotes) * data["voteProducts"][i]["numberVotes"]));
-            appendData(i, percentage);
-        }
-    });
-
-    function appendData(number, percentage){
-        $(".vote-results .bar-container .bar-"+number+" p.percentage span").text(percentage);
-        $(".vote-results .bar-container .bar-"+number).css("width", percentage+"%");
-    }
+    // var urlJSON = 'json/stemmen.json';
+    // var urlPHP = 'stuntstemmen/postvote.php';
+    //
+    // $.getJSON(urlJSON,function(data) {
+    //     var totalvotes = data["voteProducts"][0]["numberVotes"] + data["voteProducts"][1]["numberVotes"];
+    //     for (var i = 0; i < 2; i++){
+    //         var percentage = Math.round(((100 / totalvotes) * data["voteProducts"][i]["numberVotes"]));
+    //         appendData(i, percentage);
+    //     }
+    // });
+    //
+    // function appendData(number, percentage){
+    //     $(".vote-results .bar-container .bar-"+number+" p.percentage span").text(percentage);
+    //     $(".vote-results .bar-container .bar-"+number).css("width", percentage+"%");
+    // }
 
     $(document).on("click touchend", ".shopping-list .bottom .right h4", function () {
 
@@ -264,13 +264,13 @@ function init() {
     });
 
     $(document).on("click touchend", ".vote .arrow", function () {
-        var product = $(this).find("img").data("product");
-        console.log(product);
-        var data = {
-            vote: 1,
-            product: product
-        };
-        $.post(urlPHP,data);
+        // var product = $(this).find("img").data("product");
+        // console.log(product);
+        // var data = {
+        //     vote: 1,
+        //     product: product
+        // };
+        // $.post(urlPHP,data);
 
         $(".product, .welcome, .vote, .vote-results, .search, .search-result, .folder, .idle").removeClass("active");
         $(".vote-results").addClass("active");

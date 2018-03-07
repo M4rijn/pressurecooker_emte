@@ -791,8 +791,8 @@
                 </div>
 
                 <div class="bar-mid">
-                    <div class="bar-0"><p class="percentage"><span></span>&#37;</p></div>
-                    <div class="bar-1"><p class="percentage"><span></span>&#37;</p></div>
+                    <div class="bar-0"><p class="percentage"><span>62</span>&#37;</p></div>
+                    <div class="bar-1"><p class="percentage"><span>38</span>&#37;</p></div>
                 </div>
 
                 <div class="bar-right">

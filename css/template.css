@@ -646,13 +646,13 @@ span.bold{
     background: #0E6941;
     height: 60px;
     float: left;
-    width: 65%;
+    width: 62%;
     border-radius: 10px 0 0 10px;
 }
 
 .vote-results .bar-container .bar-mid .bar-1{
     background: #77b700;
-    width: 35%;
+    width: 38%;
     border-radius: 0 10px 10px 0;
 }
 
