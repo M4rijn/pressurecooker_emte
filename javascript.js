@@ -106,7 +106,7 @@ function init() {
         // console.log(data.message);
 
         switch (parseInt(data.message)) {
-            case 8888888888888:
+            case 8722700462958:
                 // Calvé pindakaas
                 scannedProduct("1");
                 break;
